@@ -5,7 +5,7 @@ import NeoGraph from "./components/NeoGraph";
 
 function App() {
   // Neo4j 访问配置（可改为从 env 变量读入）
-  const NEO4J_HTTP_URL = "http://localhost:7474"; // 你的 Neo4j HTTP 访问地址
+  const NEO4J_URL = "bolt://localhost:7687"; // 你的 Neo4j Bolt 访问地址
   const NEO4J_USER = "neo4j"; // 你的 Neo4j 用户名
   const NEO4J_PASS = "your_password";
 
@@ -60,7 +60,7 @@ function App() {
           </div>
           <NeoGraph
             cypherQuery={graphCypher}
-            serverUrl={NEO4J_HTTP_URL}
+            serverUrl={NEO4J_URL}
             serverUser={NEO4J_USER}
             serverPassword={NEO4J_PASS}
             onNodeClick={handleNodeClick}
