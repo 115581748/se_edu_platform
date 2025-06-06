@@ -1,0 +1,5 @@
+docker run -d --name neo4j -p 7474:7474 -p 7687:7687 -v E:\please_last_project\neo4j\data:/var/lib/neo4j/data -e NEO4J_AUTH=neo4j/your_password neo4j:5.13.0
+
+docker run -d --name neo4j -p 7474:7474 -p 7687:7687 -v E:\please_last_project\neo4j\data:/var/lib/neo4j/data -e NEO4J_AUTH=neo4j/your_password neo4j:5.13.0  
+
+curl -X POST http://localhost:8000/ai/generate -H "Content-Type: application/json" -d '{ "prompt": "Implement a thread-safe Singleton pattern in Java:", "concept_label": "Concept", "allowed_status": "taught" }'

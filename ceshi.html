@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>NeoVis 最小化测试</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    #neo-vis-container {
+      width: 100%;
+      height: 100vh;             /* 高度占满整个可视窗口 */
+      border: 1px solid #ccc;    /* 可视化边框，方便调试 */
+    }
+    #error-message {
+      position: absolute;
+      top: 10px; left: 10px;
+      color: red;
+      background: rgba(255,255,255,0.9);
+      padding: 10px;
+      border: 1px solid red;
+      display: none;
+      z-index: 10;
+    }
+  </style>
+
+  <!-- —— 一定要先引入 neovis.js —— -->
+  <!-- 这里使用 unpkg CDN，版本号可以根据需要替换为最新稳定版本 -->
+  <!-- <script src="https://unpkg.com/neovis.js@2.1.0/dist/neovis.js"></script> -->
+  <!-- 如果想使用 jsDelivr，也可以： -->
+  <script src="https://rawgit.com/neo4j-contrib/neovis.js/master/dist/neovis.js"></script>
+</head>
+<body>
+
+  <!-- 显示错误信息的 DIV -->
+  <div id="error-message"></div>
+
+  <!-- NeoVis 渲染容器 -->
+  <div id="neo-vis-container"></div>
+
+  <script>
+    // —— 1. Neo4j 连接配置 —— 
+    // 请替换为你本地或远程 Neo4j Bolt 地址、用户名、密码
+    // Neovis.default.config = {
+    //   // 这里可以设置一些全局配置，比如主题、语言等
+    //   // 但通常不需要修改，除非有特殊需求
+    // };
+    const boltUri       = "bolt://localhost:7687";  // Bolt 协议地址
+    const neo4jUser     = "neo4j";                  // Neo4j 用户
+    const neo4jPassword = "your_password";         // Neo4j 密码（请换成你自己的密码）
+    // —— 2. 检查 Neovis 是否已加载 —— 
+    if (typeof Neovis === "undefined") {
+      document.getElementById("error-message").innerText = 
+        "错误：未能加载 Neovis.js，请检查 <script> 引入路径是否正确。";
+      document.getElementById("error-message").style.display = "block";
+      throw new ReferenceError("Neovis is not defined");
+    }
+
+    // —— 3. 配置 NeoVis —— 
+    // initial_cypher：一个最基础的 Cypher，保证数据库里只要有节点就能看到效果
+    // 如果你想看更具体的标签/关系，把下面的 Cypher 改为你的实际查询即可
+    const config = {
+      container_id: "neo-vis-container",
+      server_url:   boltUri,
+      server_user:  neo4jUser,
+      server_password: neo4jPassword,
+      initial_cypher: `
+        MATCH (n) 
+        RETURN n 
+        LIMIT 25
+      `,
+      labels: {
+        // 当数据库里返回的节点标签是什么，就在这里配置 caption
+        // 如果你只有概念（Concept）标签，也可以写： Concept: { caption: "name" }
+        // 这里做个通用示例：只显示“标签名: 属性 name 或 title”
+        // 如果节点里没有 name 或 title 属性，就只会显示 id。
+        Person:   { caption: "name" },
+        Movie:    { caption: "title" },
+        Concept:  { caption: "name" },
+        Class:    { caption: "name" },
+        // 如果有其它标签，NeoVis 会使用默认的“节点内部 ID”来展示
+      },
+      relationships: {
+        // 只做简单示例，不显示任何边的文字
+        // 如果你想显示关系类型本身，把 caption: "type" 改为 true 或 string 属性
+        "ACTED_IN":    { caption: false },
+        "RELATED_TO":  { caption: false },
+        "USES":        { caption: false }
+      }
+    };
+
+    // —— 4. 渲染 NeoVis 图谱 —— 
+    window.addEventListener("DOMContentLoaded", () => {
+      try {
+        // 创建一个 Neovis 实例
+        const viz = new Neovis.default(config);
+        // 调用 render()，渲染图谱
+        viz.render();
+      } catch (err) {
+        // 如果渲染过程中有任何异常，捕获并在页面上显示
+        console.error("NeoVis 渲染出错：", err);
+        const box = document.getElementById("error-message");
+        box.innerText = "NeoVis 渲染失败： " + err.message;
+        box.style.display = "block";
+      }
+    });
+  </script>
+
+</body>
+</html>
