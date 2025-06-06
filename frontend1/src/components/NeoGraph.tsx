@@ -1,6 +1,6 @@
 // 文件路径：frontend/src/components/NeoGraph.tsx
 import React, { useEffect, useRef } from "react";
-import NeoVis from "neovis.js/dist/neovis.js";
+import NeoVis, { migrateFromOldConfig } from "neovis.js/dist/neovis.js";
 
 interface NeoGraphProps {
   cypherQuery: string;      // Cypher 查询语句，例如 "MATCH (n) RETURN n LIMIT 100"
@@ -48,12 +48,11 @@ const NeoGraph: React.FC<NeoGraphProps> = ({
     }
 
     // 构造 Neovis 配置
-    const config = {
+    const oldConfig = {
       container_id: container.id,
       server_url: serverUrl,
       server_user: serverUser,
       server_password: serverPassword,
-      // useNeo4jBolt: true,       // 如果要使用 Bolt 协议，需要确保 serverUrl 是 "bolt://..." 或 "neo4j+s://..."
       initial_cypher: cypherQuery,
       labels: {
         Class: {
@@ -90,6 +89,20 @@ const NeoGraph: React.FC<NeoGraphProps> = ({
       },
       arrows: true,
     };
+
+    // 2.x 开始 neovis.js 改用了 camelCase 配置，为了兼容旧参数，这里自动迁移
+    let config = migrateFromOldConfig(oldConfig);
+    // 如果布局配置缺失，vis-network 会在 setOptions 时抛出错误，
+    // 因此这里为其提供一个默认值
+    if (!config.visConfig) {
+      config.visConfig = {};
+    }
+    if (config.visConfig.layout === undefined) {
+      config.visConfig.layout = {
+        improvedLayout: true,
+        hierarchical: { enabled: false, sortMethod: "directed" },
+      };
+    }
 
     console.log("📑 Neovis 配置：", config);
 
