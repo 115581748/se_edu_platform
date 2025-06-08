@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "neovis.js": "^2.1.0"
+    "neovis.js": "^2.1.0",
+    "react-markdown": "^10.1.0",
+    "rehype-sanitize": "^6.0.0",
+    "remark-gfm": "^4.0.1"
   }
 }
