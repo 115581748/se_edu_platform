@@ -11,9 +11,7 @@ function App() {
 
   // 你想展示的 Cypher 语句，例如把 Class 节点与概念都画出来
   const graphCypher = `
-    MATCH (c:Class)-[:RELATED_TO]->(concept:Concept)
-    RETURN c, concept
-    LIMIT 100
+    MATCH (n) RETURN n LIMIT 25
   `;
 
   // 点击节点时的回调示例

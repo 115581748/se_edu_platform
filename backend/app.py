@@ -36,24 +36,30 @@ class GenerateResponse(BaseModel):
     result: str
 
 # ———— 4. 从 Neo4j 拉取“已教学”概念及简介 ————
-def fetch_allowed_concepts(label: str, status: str):
+def fetch_allowed_topics(status: str):
     """
-    返回 [(name, description), ...] 列表
-    Cypher: MATCH (c:label {status: status}) RETURN c.name, c.description
+    返回所有带有 status 属性的节点，格式化为 dict：
+       [
+         {"labels": [...], "name": "...", "status": "...", ...任意其它属性...},
+         …
+       ]
     """
-    with driver.session() as session:
-        cypher = (
-            f"MATCH (c:{label}) "
-            f"WHERE c.status = $status "
-            f"RETURN c.name AS name, c.description AS desc"
+    with driver.session() as sess:
+        result = sess.run(
+            """
+            MATCH (n)
+            WHERE n.status IS NOT NULL AND n.status = $status
+            RETURN n, labels(n) AS labels
+            """,
+            status=status
         )
-        result = session.run(cypher, status=status)
-        items = []
-        for record in result:
-            name = record["name"]
-            desc = record["desc"] or ""
-            items.append((name, desc))
-        return items
+        topics = []
+        for rec in result:
+            node = rec["n"]
+            props = dict(node)               # { 'name': ..., 'description': ..., 'status': ..., … }
+            props["labels"] = rec["labels"]  # 手动加上 labels
+            topics.append(props)
+        return topics
 
 # ———— 5. 从 Neo4j 拿“图数据” JSON（节点 + 关系）——前端 Neovis/Vis.js 用到 ————
 @app.get("/api/graph-data")
@@ -122,14 +128,15 @@ def call_deepseek_chat(prompt_text: str) -> str:
             ],
             temperature=0.7,
             top_p=0.9,
-            max_tokens=512,
+            # max_tokens=512,
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"DeepSeek 调用失败：{e}")
-
+    
+    print(resp)
     # 返回的结构：resp.choices[0].message.content
     try:
-        return resp.choices[0].message.content.strip()
+        return resp.choices[0].message.content
     except Exception:
         raise HTTPException(status_code=500, detail=f"DeepSeek 返回格式异常：{resp}")
 
@@ -137,18 +144,23 @@ def call_deepseek_chat(prompt_text: str) -> str:
 @app.post("/api/ai/generate", response_model=GenerateResponse)
 def ai_generate(req: GenerateRequest):
     # 1) 从 Neo4j 拉取所有标为 'taught' 的概念
-    concepts = fetch_allowed_concepts(req.concept_label, req.allowed_status)
-    if not concepts:
+    topics = fetch_allowed_topics(req.allowed_status)
+    if not  topics:
         raise HTTPException(status_code=404, detail="未找到任何已标记为 taught 的概念")
 
-    # 2) 拼接“背景知识”文本
+    # 举例，把每个 topic 的 name/description/status 拼成一段背景
     background_lines = []
-    for name, desc in concepts:
+    for topic in topics:
+        name   = topic.get("name", "<no-name>")
+        desc   = topic.get("description", "")
+        status = topic.get("status")
+        labels = topic.get("labels", [])
+        label0 = labels[0] if labels else "Unknown"
         if desc:
-            background_lines.append(f"● {name}：{desc}")
+            background_lines.append(f"● [{label0}] {name}:{desc} (status={status})")
         else:
-            background_lines.append(f"● {name}")
-    background_text = "\n".join(background_lines)
+            background_lines.append(f"● [{label0}] {name} (status={status})")
+        background_text = "\n".join(background_lines)
 
     # 3) 构造最终发给模型的 prompt
     full_prompt = (
@@ -167,3 +179,18 @@ def ai_generate(req: GenerateRequest):
 # ———— 8. 启动说明 ————
 # 保存为 backend/app.py 后，在此目录下执行：
 #    uvicorn app:app --reload --host 0.0.0.0 --port 8000
+@app.post("/admin/tag_missing_status")
+def tag_missing_status(default_status: str = "untaught"):
+    """
+    给所有没有 status 属性的节点，设置默认 status。
+    """
+    with driver.session() as sess:
+        sess.run(
+            """
+            MATCH (n)
+            WHERE NOT exists(n.status)
+            SET n.status = $s
+            """,
+            s=default_status
+        )
+    return {"ok": True, "tagged_as": default_status}

@@ -91,7 +91,18 @@ const NeoGraph: React.FC<NeoGraphProps> = ({
     };
 
     // 2.x 开始 neovis.js 改用了 camelCase 配置，为了兼容旧参数，这里自动迁移
-    const config = migrateFromOldConfig(oldConfig);
+    let config = migrateFromOldConfig(oldConfig);
+    // 如果布局配置缺失，vis-network 会在 setOptions 时抛出错误，
+    // 因此这里为其提供一个默认值
+    if (!config.visConfig) {
+      config.visConfig = {};
+    }
+    if (config.visConfig.layout === undefined) {
+      config.visConfig.layout = {
+        improvedLayout: true,
+        hierarchical: { enabled: false, sortMethod: "directed" },
+      };
+    }
 
     console.log("📑 Neovis 配置：", config);
 
