@@ -6,6 +6,7 @@ from pydantic import BaseModel
 from neo4j import GraphDatabase
 from dotenv import load_dotenv
 from openai import OpenAI  # DeepSeek API 兼容 OpenAI SDK
+import tiktoken
 
 # ———— 1. 加载环境变量 ————
 load_dotenv()  # 从 backend/.env 里读取
@@ -25,6 +26,20 @@ driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASS))
 # 使用 OpenAI SDK 调用 DeepSeek API（兼容 OpenAI 格式）
 # base_url 可以写 "https://api.deepseek.com/v1" 或者直接 "https://api.deepseek.com"
 openai_client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url="https://api.deepseek.com/v1")
+
+# DeepSeek Reasoner 模型上下文窗口大小（近似值）
+MODEL_CONTEXT_TOKENS = 8192
+_encoding = tiktoken.get_encoding("cl100k_base")
+
+SYSTEM_PROMPT = "你是一个辅助软件工程教育的智能助手，请结合已学概念回答用户问题。"
+SYSTEM_PROMPT_TOKENS = len(_encoding.encode(SYSTEM_PROMPT))
+
+def calc_remaining_tokens(prompt_text: str) -> int:
+    """根据上下文长度预估可用于回答的 token 数量"""
+    prompt_tokens = len(_encoding.encode(prompt_text))
+    remaining = MODEL_CONTEXT_TOKENS - SYSTEM_PROMPT_TOKENS - prompt_tokens
+    # 至少留出一定的生成空间
+    return max(16, remaining)
 
 # ———— 3. 请求/响应模型 ————
 class GenerateRequest(BaseModel):
@@ -120,15 +135,16 @@ def call_deepseek_chat(prompt_text: str) -> str:
     返回生成的回答文本
     """
     try:
+        max_tokens = calc_remaining_tokens(prompt_text)
         resp = openai_client.chat.completions.create(
             model="deepseek-reasoner",
             messages=[
-                {"role": "system", "content": "你是一个辅助软件工程教育的智能助手，请结合已学概念回答用户问题。"},
+                {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user",   "content": prompt_text},
             ],
             temperature=0.7,
             top_p=0.9,
-            max_tokens=512,
+            max_tokens=max_tokens,
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"DeepSeek 调用失败：{e}")
