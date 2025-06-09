@@ -1,16 +1,13 @@
-// frontend/src/components/NeoGraph.tsx
+// File: frontend/src/components/NeoGraph.tsx
 import React, { useEffect, useRef } from "react";
-import * as NeoVisModule from "neovis.js";
-
-// Compatibility helper to support both ESM and UMD builds
-const NeoVis = (NeoVisModule as any).default || (NeoVisModule as any).NeoVis || (NeoVisModule as any);
-const { migrateFromOldConfig } = NeoVisModule as any;
+import NeoVis from "neovis.js/dist/neovis.js";
 
 interface NeoGraphProps {
-  cypherQuery: string;
-  serverUrl: string;
-  serverUser: string;
-  serverPassword: string;
+  serverUrl: string;        // Bolt URL，例如 "bolt://localhost:7687"
+  serverUser: string;       // Neo4j 用户名x
+  serverPassword: string;   // Neo4j 密码
+  status?: string;          // 只渲染此状态的节点，默认 'taught'
+  limit?: number;           // 最多拉取多少节点，默认 100
   onNodeClick?: (node: {
     id: string;
     labels: string[];
@@ -19,114 +16,91 @@ interface NeoGraphProps {
 }
 
 const NeoGraph: React.FC<NeoGraphProps> = ({
-  cypherQuery,
   serverUrl,
   serverUser,
   serverPassword,
+  status = "taught",
+  limit = 100,
   onNodeClick,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  // 存储上一次的 Viz 实例
-  const vizRef = useRef<any>(null);
-  // 存储上一次的 config，避免重复引用导致的内部错误
-  const configRef = useRef<any>(null);
+  const vizRef = useRef<NeoVis | null>(null);
 
   useEffect(() => {
     if (!containerRef.current) return;
 
-    // 如果已经有一个 viz 实例，先清理它
+    // 销毁旧实例
     if (vizRef.current) {
-      vizRef.current.clearNetwork();
+      try {
+        vizRef.current.clearNetwork();
+        // @ts-ignore
+        vizRef.current._vis.destroy();
+      } catch {}
+      vizRef.current = null;
     }
 
-    // 构造旧版配置并在后续转换为新版格式，避免 2.x 解析错误
-    const oldConfig = {
+    // 构造带 status 过滤的 Cypher
+    const cypher = `
+      MATCH (n)
+      WHERE n.status = '${status}'
+      RETURN n
+      LIMIT ${limit}
+    `.trim();
+
+    const config = {
       container_id: containerRef.current.id,
       server_url: serverUrl,
       server_user: serverUser,
       server_password: serverPassword,
       useNeo4jBolt: true,
-      initial_cypher: cypherQuery,
+      initial_cypher: cypher,
       labels: {
-        Concept: { caption: "name" },
-        Class: { caption: "name" },
-        // …其他 Label 配置
+        // 按需配置不同标签样式
+        Concept: { caption: "name", color: "#10B981", size: 18 },
+        Framework: { caption: "name", color: "#3B82F6", size: 20 },
+        Tool: { caption: "name", color: "#EF4444", size: 16 },
       },
       relationships: {
-        // …你的关系配置
+        RELATED_TO: { caption: false, thickness: 2, color: "#9CA3AF" },
+        USES:       { caption: false, thickness: 2, color: "#6B7280" },
       },
       arrows: true,
     };
-    // neovis.js 2.x 使用 camelCase 配置，这里自动转换
-    const config = migrateFromOldConfig(oldConfig);
-    if (!config.visConfig) {
-      config.visConfig = {};
-    }
-    if (config.visConfig.layout === undefined) {
-      config.visConfig.layout = {
-        improvedLayout: true,
-        hierarchical: { enabled: false, sortMethod: "directed" },
-      };
-    }
-    configRef.current = config;
 
-    // 创建新的 Viz 实例并 render
-    const viz = new NeoVis(configRef.current);
+    const viz = new NeoVis(config);
     vizRef.current = viz;
     viz.render();
 
-    // 渲染完成后，按 status 给节点上色、显示/隐藏 label
-    viz.registerOnEvent("completed", () => {
-      const network = viz.network;
-      const nodesDS  = network.body.data.nodes;
-      const allNodes = nodesDS.get();
-
-      allNodes.forEach((node: any) => {
-        const status = node.status as string;    // taught / untaught
-        const name   = node.name  as string;
-
-        nodesDS.update({
-          id: node.id,
-          color: {
-            background: status === "taught" ? "#10B981" : "#EF4444",
-            border:     status === "taught" ? "#047857" : "#B91C1C",
-          },
-          // 只给“未学”节点显示 label
-          label: status === "untaught" ? name : "",
-        });
+    // 节点点击回调
+    if (onNodeClick) {
+      viz.registerOnEvent("clickNode", (e: any) => {
+        if (e.nodes?.length > 0) {
+          const nodeId = e.nodes[0];
+          // @ts-ignore
+          const nodeData = viz.nodeIdMap[nodeId];
+          onNodeClick({
+            id: nodeData.id,
+            labels: nodeData.labels,
+            properties: nodeData.properties,
+          });
+        }
       });
+    }
 
-      // 如果传了回调，则注册点击事件
-      if (onNodeClick) {
-        network.on("click", (params: any) => {
-          if (params.nodes.length > 0) {
-            const nodeId   = params.nodes[0];
-            const nodeData = (viz as any).nodeIdMap[nodeId];
-            onNodeClick({
-              id: nodeData.id,
-              labels: nodeData.labels,
-              properties: nodeData.properties,
-            });
-          }
-        });
-      }
-    });
-
-    // 卸载时清理
     return () => {
       if (vizRef.current) {
-        vizRef.current.clearNetwork();
+        try {
+          vizRef.current.clearNetwork();
+          // @ts-ignore
+          vizRef.current._vis.destroy();
+        } catch {}
         vizRef.current = null;
       }
     };
-  }, [cypherQuery, serverUrl, serverUser, serverPassword, onNodeClick]);
+  }, [serverUrl, serverUser, serverPassword, status, limit, onNodeClick]);
 
   return (
-    <div
-      id="neo-vis-container"
-      ref={containerRef}
-      className="w-full h-[600px] bg-white rounded-lg shadow-md"
-    />
+    <div className="w-full h-[600px] bg-white rounded-lg shadow-md border-gray-200 border" ref={containerRef} id="neo-vis-container" />
   );
 };
 
