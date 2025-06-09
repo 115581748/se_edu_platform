@@ -1,6 +1,6 @@
 // frontend/src/components/NeoGraph.tsx
 import React, { useEffect, useRef } from "react";
-import NeoVis from "neovis.js/dist/neovis.js";
+import NeoVis, { migrateFromOldConfig } from "neovis.js/dist/neovis.js";
 
 interface NeoGraphProps {
   cypherQuery: string;
@@ -35,8 +35,8 @@ const NeoGraph: React.FC<NeoGraphProps> = ({
       vizRef.current.clearNetwork();
     }
 
-    // 构造新配置，并保存在 configRef
-    const newConfig = {
+    // 构造旧版配置并在后续转换为新版格式，避免 2.x 解析错误
+    const oldConfig = {
       container_id: containerRef.current.id,
       server_url: serverUrl,
       server_user: serverUser,
@@ -45,7 +45,7 @@ const NeoGraph: React.FC<NeoGraphProps> = ({
       initial_cypher: cypherQuery,
       labels: {
         Concept: { caption: "name" },
-        Class:   { caption: "name" },
+        Class: { caption: "name" },
         // …其他 Label 配置
       },
       relationships: {
@@ -53,7 +53,18 @@ const NeoGraph: React.FC<NeoGraphProps> = ({
       },
       arrows: true,
     };
-    configRef.current = newConfig;
+    // neovis.js 2.x 使用 camelCase 配置，这里自动转换
+    const config = migrateFromOldConfig(oldConfig);
+    if (!config.visConfig) {
+      config.visConfig = {};
+    }
+    if (config.visConfig.layout === undefined) {
+      config.visConfig.layout = {
+        improvedLayout: true,
+        hierarchical: { enabled: false, sortMethod: "directed" },
+      };
+    }
+    configRef.current = config;
 
     // 创建新的 Viz 实例并 render
     const viz = new NeoVis(configRef.current);
