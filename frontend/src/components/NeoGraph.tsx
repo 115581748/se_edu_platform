@@ -54,17 +54,7 @@ const NeoGraph: React.FC<NeoGraphProps> = ({
       arrows: true,
     };
     // neovis.js 2.x 使用 camelCase 配置，这里自动转换
-    const config = migrateFromOldConfig(oldConfig);
-    if (!config.visConfig) {
-      config.visConfig = {};
-    }
-    if (config.visConfig.layout === undefined) {
-      config.visConfig.layout = {
-        improvedLayout: true,
-        hierarchical: { enabled: false, sortMethod: "directed" },
-      };
-    }
-    configRef.current = config;
+    const config = oldConfig;
 
     // 创建新的 Viz 实例并 render
     const viz = new NeoVis(configRef.current);
