@@ -1,6 +1,10 @@
 // frontend/src/components/NeoGraph.tsx
 import React, { useEffect, useRef } from "react";
-import NeoVis, { migrateFromOldConfig } from "neovis.js/dist/neovis.js";
+import * as NeoVisModule from "neovis.js";
+
+// Compatibility helper to support both ESM and UMD builds
+const NeoVis = (NeoVisModule as any).default || (NeoVisModule as any).NeoVis || (NeoVisModule as any);
+const { migrateFromOldConfig } = NeoVisModule as any;
 
 interface NeoGraphProps {
   cypherQuery: string;
