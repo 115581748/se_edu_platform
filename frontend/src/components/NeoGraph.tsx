@@ -45,7 +45,7 @@ const NeoGraph: React.FC<NeoGraphProps> = ({
       initial_cypher: cypherQuery,
       labels: {
         Concept: { caption: "name" },
-        Class:   { caption: "name" },
+        Class: { caption: "name" },
         // …其他 Label 配置
       },
       relationships: {
