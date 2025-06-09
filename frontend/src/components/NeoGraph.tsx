@@ -1,7 +1,10 @@
 // frontend/src/components/NeoGraph.tsx
 import React, { useEffect, useRef } from "react";
-import NeoVisPkg from "neovis.js";
-const { default: NeoVis, migrateFromOldConfig } = NeoVisPkg as any;
+import * as NeoVisModule from "neovis.js";
+
+// Compatibility helper to support both ESM and UMD builds
+const NeoVis = (NeoVisModule as any).default || (NeoVisModule as any).NeoVis || (NeoVisModule as any);
+const { migrateFromOldConfig } = NeoVisModule as any;
 
 interface NeoGraphProps {
   cypherQuery: string;
@@ -55,7 +58,17 @@ const NeoGraph: React.FC<NeoGraphProps> = ({
       arrows: true,
     };
     // neovis.js 2.x 使用 camelCase 配置，这里自动转换
-    const config = oldConfig;
+    const config = migrateFromOldConfig(oldConfig);
+    if (!config.visConfig) {
+      config.visConfig = {};
+    }
+    if (config.visConfig.layout === undefined) {
+      config.visConfig.layout = {
+        improvedLayout: true,
+        hierarchical: { enabled: false, sortMethod: "directed" },
+      };
+    }
+    configRef.current = config;
 
     // 创建新的 Viz 实例并 render
     const viz = new NeoVis(configRef.current);
@@ -63,7 +76,7 @@ const NeoGraph: React.FC<NeoGraphProps> = ({
     viz.render();
 
     // 渲染完成后，按 status 给节点上色、显示/隐藏 label
-    viz.registerOnEvent("renderComplete", () => {
+    viz.registerOnEvent("completed", () => {
       const network = viz.network;
       const nodesDS  = network.body.data.nodes;
       const allNodes = nodesDS.get();
