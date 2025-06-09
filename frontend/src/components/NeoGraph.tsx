@@ -1,6 +1,7 @@
 // frontend/src/components/NeoGraph.tsx
 import React, { useEffect, useRef } from "react";
-import NeoVis, { migrateFromOldConfig } from "neovis.js/dist/neovis.js";
+import NeoVisPkg from "neovis.js";
+const { default: NeoVis, migrateFromOldConfig } = NeoVisPkg as any;
 
 interface NeoGraphProps {
   cypherQuery: string;
