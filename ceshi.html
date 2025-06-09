@@ -29,9 +29,8 @@
 
   <!-- —— 一定要先引入 neovis.js —— -->
   <!-- 这里使用 unpkg CDN，版本号可以根据需要替换为最新稳定版本 -->
-  <!-- <script src="https://unpkg.com/neovis.js@2.1.0/dist/neovis.js"></script> -->
-  <!-- 如果想使用 jsDelivr，也可以： -->
-  <script src="https://rawgit.com/neo4j-contrib/neovis.js/master/dist/neovis.js"></script>
+  <!-- 使用 neovis.js 2.x -->
+  <script src="https://unpkg.com/neovis.js@2.1.0/dist/neovis.js"></script>
 </head>
 <body>
 
@@ -62,14 +61,14 @@
     // —— 3. 配置 NeoVis —— 
     // initial_cypher：一个最基础的 Cypher，保证数据库里只要有节点就能看到效果
     // 如果你想看更具体的标签/关系，把下面的 Cypher 改为你的实际查询即可
-    const config = {
+    const oldConfig = {
       container_id: "neo-vis-container",
       server_url:   boltUri,
       server_user:  neo4jUser,
       server_password: neo4jPassword,
       initial_cypher: `
-        MATCH (n) 
-        RETURN n 
+        MATCH (n)
+        RETURN n
         LIMIT 25
       `,
       labels: {
@@ -91,6 +90,8 @@
         "USES":        { caption: false }
       }
     };
+
+    const config = Neovis.migrateFromOldConfig(oldConfig);
 
     // —— 4. 渲染 NeoVis 图谱 —— 
     window.addEventListener("DOMContentLoaded", () => {
