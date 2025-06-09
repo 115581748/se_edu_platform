@@ -30,7 +30,7 @@ openai_client = OpenAI(api_key=DEEPSEEK_API_KEY, base_url="https://api.deepseek.
 class GenerateRequest(BaseModel):
     prompt: str
     concept_label: str = "Concept"
-    allowed_status: str = "taught"
+    allowed_status: str = "untaught"
 
 class GenerateResponse(BaseModel):
     result: str
@@ -128,7 +128,7 @@ def call_deepseek_chat(prompt_text: str) -> str:
             ],
             temperature=0.7,
             top_p=0.9,
-            # max_tokens=512,
+            max_tokens=512,
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"DeepSeek 调用失败：{e}")
