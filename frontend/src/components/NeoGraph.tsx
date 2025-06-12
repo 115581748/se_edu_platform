@@ -50,6 +50,22 @@ const NeoGraph: React.FC<NeoGraphProps> = ({
       labels: {
         Concept: { caption: "name" },
         Class: { caption: "name" },
+        Cloud: { caption: "name" },
+        CodeBlock: { caption: "name" },
+        Devops: { caption: "name" },
+        Framework: { caption: "name" },
+        Frontend: { caption: "name" },
+        Language: { caption: "name" },
+        Library: { caption: "name" },
+        Method: { caption: "name" },
+        Middleware: { caption: "name" },
+        Platfrom: { caption: "name" },
+        SOAnswer: { caption: "name" },
+        SOQuestion: { caption: "name" },
+        Tool: { caption: "name" },
+        Tech: { caption: "name" },
+        AI: { caption: "name" },
+        Database: { caption: "name" },
         // …其他 Label 配置
       },
       relationships: {
@@ -76,25 +92,35 @@ const NeoGraph: React.FC<NeoGraphProps> = ({
     viz.render();
 
     // 渲染完成后，按 status 给节点上色、显示/隐藏 label
-    viz.registerOnEvent("completed", () => {
+    viz.registerOnEvent("clickNode", () => {
       const network = viz.network;
       const nodesDS  = network.body.data.nodes;
       const allNodes = nodesDS.get();
-
-      allNodes.forEach((node: any) => {
-        const status = node.status as string;    // taught / untaught
-        const name   = node.name  as string;
-
-        nodesDS.update({
-          id: node.id,
-          color: {
-            background: status === "taught" ? "#10B981" : "#EF4444",
-            border:     status === "taught" ? "#047857" : "#B91C1C",
-          },
-          // 只给“未学”节点显示 label
-          label: status === "untaught" ? name : "",
-        });
-      });
+      console.log(`Total nodes: ${allNodes.length}`);
+      console.log("Node details:");
+      // 遍历所有节点，设置颜色和 label
+      // if (!allNodes || allNodes.length === 0) {
+      //   console.warn("No nodes found in the graph.");
+      //   return;
+      // }
+      // // 确保 allNodes 是一个数组
+      // if (!Array.isArray(allNodes)) {
+      //   console.error("Expected allNodes to be an array, but got:", allNodes);
+      //   return;
+      // }
+      // console.log(`Found ${allNodes.length} nodes in the graph.`);
+      // // 遍历所有节点，设置颜色和 label
+      // console.log("Setting colors and labels for nodes:");
+      // console.log(allNodes);
+      // // 遍历所有节点，设置颜色和 label
+      // for (const node of allNodes) {
+      //   var status = node.raw.properties.status;  // taught / untaught
+      //   var name   = node.raw.properties.name;
+      //   console.log(`Node ${node.id} status: ${node.raw.properties.status}, name: ${node.raw.properties.name}`);
+      //   node.color.background = (status == "taught" ? "#10B981" : "#EF4444");
+      //   node.color.border = (status == "taught" ? "#047857" : "#B91C1C");
+      //   node.label = (status == "untaught" ? name : "")
+      // };
 
       // 如果传了回调，则注册点击事件
       if (onNodeClick) {
