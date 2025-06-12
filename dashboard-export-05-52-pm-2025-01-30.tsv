@@ -1,0 +1,2114 @@
+Dashboard: Generative AI Usage in Software Development: Education and Professional Practices
+
+Page: Page 1
+
+Title: Please read Participant Information Sheet, if you agree with the information provided, are willing to participant in and are 18 years old or above, please click ‘Proceed’ to continue the survey. Otherwise, click ‘close’ to end the survey.
+Description: Q116 - Please read Participant Information Sheet, if you agree with the information provided, are willing to participant in and are 18 years old or above, please click ‘Proceed’ to continue the survey. Otherwise, click ‘close’ to end the survey.
+
+Q116 - Please read Participant Information Sheet, if you agree with the information provided, are willing to participant in and are 18 years old or above, please click ‘Proceed’ to continue the survey. Otherwise, click ‘close’ to end the survey.	Count	Number of responses
+Proceed	35	35
+Close	1	1
+
+Title: Please read Participant Information Sheet, if you agree with the information provided, are willing to participant in and are 18 years old or above, please click ‘Proceed’ to continue the survey. Otherwise, click ‘close’ to end the survey.
+Description: Q116 - Please read Participant Information Sheet, if you agree with the information provided, are willing to participant in and are 18 years old or above, please click ‘Proceed’ to continue the survey. Otherwise, click ‘close’ to end the survey.
+
+Q116 - Please read Participant Information Sheet, if you agree with the information provided, are willing to participant in and are 18 years old or above, please click ‘Proceed’ to continue the survey. Otherwise, click ‘close’ to end the survey.	Percentage	Count
+Proceed	97%	35
+Close	3%	1
+
+Title: Please read Participant Information Sheet, if you agree with the information provided, are willing to participant in and are 18 years old or above, please click ‘Proceed’ to continue the survey. Otherwise, click ‘close’ to end the survey.
+Description: QID116
+
+Please read Participant Information Sheet, if you agree with the informatio...	Average	Minimum	Maximum	Count
+Proceed	1.00	1.00	1.00	35
+Close	2.00	2.00	2.00	1
+
+Title: What is your current occupation?
+Description: Q1 - What is your current occupation? - Selected Choice
+
+Q1 - What is your current occupation? - Selected Choice	Count	Number of responses
+Student in Software Development	2	2
+Teacher in Software Development	1	1
+Software Developer	7	7
+Other (please specify):	12	12
+
+Title: What is your current occupation?
+Description: Q1 - What is your current occupation? - Selected Choice
+
+Q1 - What is your current occupation? - Selected Choice	Percentage	Count
+Student in Software Development	9%	2
+Teacher in Software Development	5%	1
+Software Developer	32%	7
+Other (please specify):	55%	12
+
+Title: What is your current occupation?: Other (please specify):
+Description: Q1_4_TEXT - Other (please specify): - Text
+
+Other (please specify):
+Systems Analyst and Master's Student
+Research Scientist
+Student in Computer Vision
+No Job [Doge]
+Researcher in MLCV
+
+PhD student in Computer Science
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fm
+
+PhD student in CS
+
+
+Postdoc
+"Student in CV and machine learning "
+
+
+
+
+
+Title: What is your current occupation?
+Description: QID82
+
+If you are a student, what year of study are you in?
+
+
+
+
+
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+
+Title: What is your current occupation?
+Description: Q83
+
+If you are a teacher, how many years have you been teaching?
+
+
+
+
+
+
+
+
+
+
+11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Title: What is your current occupation?
+Description: Q86
+
+If you are a developer, how many years of experience do you have?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+
+
+
+
+
+1
+
+6
+1
+
+
+
+
+
+
+
+Title: What is your current occupation?
+Description: Q87
+
+How many years of experience do you have in this field?
+
+15
+2
+7.5
+6
+
+7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4
+
+
+
+
+3
+4
+
+
+
+
+
+Title: Which Gen-AI tools have you used or are currently using? (Select all that apply)
+Description: Q3 - Which Gen-AI tools have you used or are currently using? (Select all that apply) - Selected Choice
+
+Q3 - Which Gen-AI tools have you used or are currently using? (Select all that apply) - Selected Choice	Count	Number of responses
+ChatGPT (free version)	5	5
+ChatGPT (paid version)	13	13
+GitHub Copilot	8	8
+Gemini	2	2
+Llama	7	7
+New Bing	5	5
+Other (Please specify):	5	5
+
+Title: Which Gen-AI tools have you used or are currently using? (Select all that apply)
+Description: Q3 - Which Gen-AI tools have you used or are currently using? (Select all that apply) - Selected Choice
+
+Q3 - Which Gen-AI tools have you used or are currently using? (Select all that apply) - Selected Choice	Percentage	Count
+ChatGPT (free version)	28%	5
+ChatGPT (paid version)	72%	13
+GitHub Copilot	44%	8
+Gemini	11%	2
+Llama	39%	7
+New Bing	28%	5
+Other (Please specify):	28%	5
+
+Title: Which Gen-AI tools have you used or are currently using? (Select all that apply): Other (Please specify):
+Description: Q3_7_TEXT - Other (Please specify): - Text
+
+Other (Please specify):
+
+WatsonX models
+
+
+
+
+Cursor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Wenxin (Baidu)
+Kimichat
+
+
+
+
+
+123
+
+Title: How often do you use these tools? (number of times)
+Description: Q4 - How often do you use these tools? (number of times)
+
+Q4 - How often do you use these tools? (number of times)	Count	Number of responses
+Daily	15	15
+Weekly	3	3
+
+Title: How often do you use these tools? (number of times)
+Description: Q4 - How often do you use these tools? (number of times)
+
+Q4 - How often do you use these tools? (number of times)	Percentage	Count
+Daily	83%	15
+Weekly	17%	3
+
+Title: How often do you use these tools? (number of times)
+Description: QID4
+
+How often do you use these tools? (number of times)	Average	Minimum	Maximum	Count
+Daily	1.00	1.00	1.00	15
+Weekly	2.00	2.00	2.00	3
+
+Title: Have you previously been a student in a software development related program? If yes, please answer the following questions from a student's perspective.
+Description: Q89 - Have you previously been a student in a software development related program? If yes, please answer the following questions from a student's perspective.
+
+Q89 - Have you previously been a student in a software development related program? If yes, please answer the following questions from a student's perspective.	Count	Number of responses
+Yes	13	13
+No	5	5
+
+Title: Have you previously been a student in a software development related program? If yes, please answer the following questions from a student's perspective.
+Description: Q89 - Have you previously been a student in a software development related program? If yes, please answer the following questions from a student's perspective.
+
+Q89 - Have you previously been a student in a software development related program? If yes, please answer the following questions from a student's perspective.	Percentage	Count
+Yes	72%	13
+No	28%	5
+
+Title: Have you previously been a student in a software development related program? If yes, please answer the following questions from a student's perspective.
+Description: QID89
+
+Have you previously been a student in a software development related progra...	Average	Minimum	Maximum	Count
+Yes	1.00	1.00	1.00	13
+No	2.00	2.00	2.00	5
+
+Title: Using Gen-AI tools (e.g., ChatGPT, GitHub Copilot) improves my academic performance.
+Description: Q5 - Using Gen-AI tools (e.g., ChatGPT, GitHub Copilot) improves my academic performance.
+
+Q5 - Using Gen-AI tools (e.g., ChatGPT, GitHub Copilot) improves my academic performance.	Count	Number of responses
+Strongly disagree	1	1
+Neutral	2	2
+Agree	4	4
+Strongly agree	6	6
+
+Title: Using Gen-AI tools (e.g., ChatGPT, GitHub Copilot) improves my academic performance.
+Description: Q5 - Using Gen-AI tools (e.g., ChatGPT, GitHub Copilot) improves my academic performance.
+
+Q5 - Using Gen-AI tools (e.g., ChatGPT, GitHub Copilot) improves my academic performance.	Percentage	Count
+Strongly disagree	8%	1
+Neutral	15%	2
+Agree	31%	4
+Strongly agree	46%	6
+
+Title: Using Gen-AI tools (e.g., ChatGPT, GitHub Copilot) improves my academic performance.
+Description: QID5
+
+Using Gen-AI tools (e.g., ChatGPT, GitHub Copilot) improves my academic per...	Average	Minimum	Maximum	Count
+Strongly disagree	1.00	1.00	1.00	1
+Neutral	3.00	3.00	3.00	2
+Agree	4.00	4.00	4.00	4
+Strongly agree	5.00	5.00	5.00	6
+
+Title: Gen-AI tools increase my productivity in learning software development.
+Description: Q6 - Gen-AI tools increase my productivity in learning software development.
+
+Q6 - Gen-AI tools increase my productivity in learning software development.	Count	Number of responses
+Strongly Disagree	1	1
+Neutral	1	1
+Agree	2	2
+Strongly agree	8	8
+
+Title: Gen-AI tools increase my productivity in learning software development.
+Description: Q6 - Gen-AI tools increase my productivity in learning software development.
+
+Q6 - Gen-AI tools increase my productivity in learning software development.	Percentage	Count
+Strongly Disagree	8%	1
+Neutral	8%	1
+Agree	17%	2
+Strongly agree	67%	8
+
+Title: Gen-AI tools increase my productivity in learning software development.
+Description: QID6
+
+Gen-AI tools increase my productivity in learning software development.	Average	Minimum	Maximum	Count
+Strongly Disagree	1.00	1.00	1.00	1
+Neutral	3.00	3.00	3.00	1
+Agree	4.00	4.00	4.00	2
+Strongly agree	5.00	5.00	5.00	8
+
+Title: I find Gen-AI tools enhance my learning effectiveness.
+Description: Q7 - I find Gen-AI tools enhance my learning effectiveness.
+
+Q7 - I find Gen-AI tools enhance my learning effectiveness.	Count	Number of responses
+Strongly Disagree	1	1
+Agree	3	3
+Strongly agree	8	8
+
+Title: I find Gen-AI tools enhance my learning effectiveness.
+Description: Q7 - I find Gen-AI tools enhance my learning effectiveness.
+
+Q7 - I find Gen-AI tools enhance my learning effectiveness.	Percentage	Count
+Strongly Disagree	8%	1
+Agree	25%	3
+Strongly agree	67%	8
+
+Title: I find Gen-AI tools enhance my learning effectiveness.
+Description: QID7
+
+I find Gen-AI tools enhance my learning effectiveness.	Average	Minimum	Maximum	Count
+Strongly Disagree	1.00	1.00	1.00	1
+Agree	4.00	4.00	4.00	3
+Strongly agree	5.00	5.00	5.00	8
+
+Title: Q8. Where did you learn how to use generative AI tools effectively?(Select all that apply)
+Description: Q8.&nbsp; - Q8. Where did you learn how to use generative AI tools effectively?(Select all that apply) - Selected Choice
+
+Q8.  - Q8. Where did you learn how to use generative AI tools effectively?(Select all that apply) - Selected Choice	Count	Number of responses
+University courses or workshops	4	4
+Online tutorials or courses (e.g., Coursera, YouTube)	8	8
+Peer discussions or study groups	4	4
+Self-exploration and experimentation	12	12
+Mentorship or guidance from supervisors/mentors	3	3
+From friends or classmates	5	5
+Educational webinars or conferences	2	2
+Other (please specify):	1	1
+
+Title: Q8. Where did you learn how to use generative AI tools effectively?(Select all that apply)
+Description: Q8.&nbsp; - Q8. Where did you learn how to use generative AI tools effectively?(Select all that apply) - Selected Choice
+
+Q8.  - Q8. Where did you learn how to use generative AI tools effectively?(Select all that apply) - Selected Choice	Percentage	Count
+University courses or workshops	31%	4
+Online tutorials or courses (e.g., Coursera, YouTube)	62%	8
+Peer discussions or study groups	31%	4
+Self-exploration and experimentation	92%	12
+Mentorship or guidance from supervisors/mentors	23%	3
+From friends or classmates	38%	5
+Educational webinars or conferences	15%	2
+Other (please specify):	8%	1
+
+Title: Q8. Where did you learn how to use generative AI tools effectively?(Select all that apply): Other (please specify):
+Description: Q8.&nbsp;_8_TEXT - Other (please specify): - Text
+
+Other (please specify):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Title: Learning to use Gen-AI tools is relevant to my future career in software development.
+Description: Q9 - Learning to use Gen-AI tools is relevant to my future career in software development.
+
+Q9 - Learning to use Gen-AI tools is relevant to my future career in software development.	Count	Number of responses
+Strongly Disagree	1	1
+Neutral	2	2
+Agree	2	2
+Strongly agree	7	7
+
+Title: Learning to use Gen-AI tools is relevant to my future career in software development.
+Description: Q9 - Learning to use Gen-AI tools is relevant to my future career in software development.
+
+Q9 - Learning to use Gen-AI tools is relevant to my future career in software development.	Percentage	Count
+Strongly Disagree	8%	1
+Neutral	17%	2
+Agree	17%	2
+Strongly agree	58%	7
+
+Title: Learning to use Gen-AI tools is relevant to my future career in software development.
+Description: QID9
+
+Learning to use Gen-AI tools is relevant to my future career in software de...	Average	Minimum	Maximum	Count
+Strongly Disagree	1.00	1.00	1.00	1
+Neutral	3.00	3.00	3.00	2
+Agree	4.00	4.00	4.00	2
+Strongly agree	5.00	5.00	5.00	7
+
+Title: For what tasks do you primarily use AI tools in your coursework? (Select all that apply)
+Description: Q10 - For what tasks do you primarily use AI tools in your coursework? (Select all that apply) - Selected Choice
+
+Q10 - For what tasks do you primarily use AI tools in your coursework? (Select all that apply) - Selected Choice	Count	Number of responses
+Code generation	10	10
+Reviewing lecture materials	3	3
+Understanding requirements	4	4
+Writing documentation	6	6
+Refactoring code	4	4
+Explaining code	10	10
+Debugging or finding bugs	4	4
+Creating test cases	6	6
+
+Title: For what tasks do you primarily use AI tools in your coursework? (Select all that apply)
+Description: Q10 - For what tasks do you primarily use AI tools in your coursework? (Select all that apply) - Selected Choice
+
+Q10 - For what tasks do you primarily use AI tools in your coursework? (Select all that apply) - Selected Choice	Percentage	Count
+Code generation	83%	10
+Reviewing lecture materials	25%	3
+Understanding requirements	33%	4
+Writing documentation	50%	6
+Refactoring code	33%	4
+Explaining code	83%	10
+Debugging or finding bugs	33%	4
+Creating test cases	50%	6
+
+Title: For what tasks do you primarily use AI tools in your coursework? (Select all that apply): Other (Please specify):
+Description: Q10_9_TEXT - Other (Please specify): - Text
+
+Other (Please specify):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Title: What are the main challenges you face when using AI tools in your studies? (Select all that apply)
+Description: Q11 - What are the main challenges you face when using AI tools in your studies? (Select all that apply) - Selected Choice
+
+Q11 - What are the main challenges you face when using AI tools in your studies? (Select all that apply) - Selected Choice	Count	Number of responses
+I struggle with understanding how to properly use AI tools	1	1
+I struggle with interpreting their suggestions or outputs accurately.	2	2
+I struggle with assessing the accuracy/reliability of the information provided by AI tools.	3	3
+I struggle with integrating AI-generated content with my own work due to a lack of understanding of the topic.	3	3
+I struggle in aligning AI tool outputs with the specific requirements of my assignments.	3	3
+I struggle with the AI tools providing responses that are too generic/not tailored to my needs.	9	9
+Other (Please specify):	1	1
+
+Title: What are the main challenges you face when using AI tools in your studies? (Select all that apply)
+Description: Q11 - What are the main challenges you face when using AI tools in your studies? (Select all that apply) - Selected Choice
+
+Q11 - What are the main challenges you face when using AI tools in your studies? (Select all that apply) - Selected Choice	Percentage	Count
+I struggle with understanding how to properly use AI tools	9%	1
+I struggle with interpreting their suggestions or outputs accurately.	18%	2
+I struggle with assessing the accuracy/reliability of the information provided by AI tools.	27%	3
+I struggle with integrating AI-generated content with my own work due to a lack of understanding of the topic.	27%	3
+I struggle in aligning AI tool outputs with the specific requirements of my assignments.	27%	3
+I struggle with the AI tools providing responses that are too generic/not tailored to my needs.	82%	9
+Other (Please specify):	9%	1
+
+Title: What are the main challenges you face when using AI tools in your studies? (Select all that apply): Other (Please specify):
+Description: Q11_7_TEXT - Other (Please specify): - Text
+
+Other (Please specify):
+
+
+
+"sometimes, the answer is rubbish and the solver get trapped in a local minimum "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Title: What are the key benefits of using Generative AI in your studies? (Select all that apply)
+Description: Q12 - What are the key benefits of using Generative AI in your studies? (Select all that apply) - Selected Choice
+
+Q12 - What are the key benefits of using Generative AI in your studies? (Select all that apply) - Selected Choice	Count	Number of responses
+Increased assignment speed and efficiency	6	6
+Improved code quality	7	7
+Faster understanding of concepts	8	8
+Reduced workload	7	7
+Ensuring solutions are correct	3	3
+
+Title: What are the key benefits of using Generative AI in your studies? (Select all that apply)
+Description: Q12 - What are the key benefits of using Generative AI in your studies? (Select all that apply) - Selected Choice
+
+Q12 - What are the key benefits of using Generative AI in your studies? (Select all that apply) - Selected Choice	Percentage	Count
+Increased assignment speed and efficiency	55%	6
+Improved code quality	64%	7
+Faster understanding of concepts	73%	8
+Reduced workload	64%	7
+Ensuring solutions are correct	27%	3
+
+Title: What are the key benefits of using Generative AI in your studies? (Select all that apply): Other (Please specify):
+Description: Q12_9_TEXT - Other (Please specify): - Text
+
+Other (Please specify):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Title: My experience using Gen-AI tools is straightforward and easy to comprehend. (interaction)
+Description: Q13 - My experience using Gen-AI tools is straightforward and easy to comprehend. (interaction)
+
+Q13 - My experience using Gen-AI tools is straightforward and easy to comprehend. (interaction)	Count	Number of responses
+Neutral	3	3
+Agree	5	5
+Strongly agree	3	3
+
+Title: My experience using Gen-AI tools is straightforward and easy to comprehend. (interaction)
+Description: Q13 - My experience using Gen-AI tools is straightforward and easy to comprehend. (interaction)
+
+Q13 - My experience using Gen-AI tools is straightforward and easy to comprehend. (interaction)	Percentage	Count
+Neutral	27%	3
+Agree	45%	5
+Strongly agree	27%	3
+
+Title: My experience using Gen-AI tools is straightforward and easy to comprehend. (interaction)
+Description: QID14
+
+My experience using Gen-AI tools is straightforward and easy to comprehend....	Average	Minimum	Maximum	Count
+Neutral	3.00	3.00	3.00	3
+Agree	4.00	4.00	4.00	5
+Strongly agree	5.00	5.00	5.00	3
+
+Title: Using Gen-AI tools does not require much mental effort.
+Description: Q14 - Using Gen-AI tools does not require much mental effort.
+
+Q14 - Using Gen-AI tools does not require much mental effort.	Count	Number of responses
+Disagree	3	3
+Neither	2	2
+Agree	3	3
+Strongly agree	3	3
+
+Title: Using Gen-AI tools does not require much mental effort.
+Description: Q14 - Using Gen-AI tools does not require much mental effort.
+
+Q14 - Using Gen-AI tools does not require much mental effort.	Percentage	Count
+Disagree	27%	3
+Neither	18%	2
+Agree	27%	3
+Strongly agree	27%	3
+
+Title: Using Gen-AI tools does not require much mental effort.
+Description: QID15
+
+Using Gen-AI tools does not require much mental effort.	Average	Minimum	Maximum	Count
+Disagree	2.00	2.00	2.00	3
+Neither	3.00	3.00	3.00	2
+Agree	4.00	4.00	4.00	3
+Strongly agree	5.00	5.00	5.00	3
+
+Title: I find it easy to use Gen-AI tools for learning.
+Description: Q15 - I find it easy to use Gen-AI tools for learning.
+
+Q15 - I find it easy to use Gen-AI tools for learning.	Count	Number of responses
+Agree	7	7
+Strongly agree	4	4
+
+Title: I find it easy to use Gen-AI tools for learning.
+Description: Q15 - I find it easy to use Gen-AI tools for learning.
+
+Q15 - I find it easy to use Gen-AI tools for learning.	Percentage	Count
+Agree	64%	7
+Strongly agree	36%	4
+
+Title: I find it easy to use Gen-AI tools for learning.
+Description: QID16
+
+I find it easy to use Gen-AI tools for learning.	Average	Minimum	Maximum	Count
+Agree	4.00	4.00	4.00	7
+Strongly agree	5.00	5.00	5.00	4
+
+Title: I find it easy to get Gen-AI tools to do what I want it to do.
+Description: Q16 - I find it easy to get Gen-AI tools to do what I want it to do.
+
+Q16 - I find it easy to get Gen-AI tools to do what I want it to do.	Count	Number of responses
+Disagree	2	2
+Neither	3	3
+Agree	3	3
+Strongly Agree	3	3
+
+Title: I find it easy to get Gen-AI tools to do what I want it to do.
+Description: Q16 - I find it easy to get Gen-AI tools to do what I want it to do.
+
+Q16 - I find it easy to get Gen-AI tools to do what I want it to do.	Percentage	Count
+Disagree	18%	2
+Neither	27%	3
+Agree	27%	3
+Strongly Agree	27%	3
+
+Title: I find it easy to get Gen-AI tools to do what I want it to do.
+Description: QID17
+
+I find it easy to get Gen-AI tools to do what I want it to do.	Average	Minimum	Maximum	Count
+Disagree	2.00	2.00	2.00	2
+Neither	3.00	3.00	3.00	3
+Agree	4.00	4.00	4.00	3
+Strongly Agree	5.00	5.00	5.00	3
+
+Title: My teacher let me think I should use Gen-AI tools for learning.
+Description: Q17 - My teacher let me think I should use Gen-AI tools for learning.
+
+Q17 - My teacher let me think I should use Gen-AI tools for learning.	Count	Number of responses
+Disagree	3	3
+Neutral	6	6
+Strongly agree	2	2
+
+Title: My teacher let me think I should use Gen-AI tools for learning.
+Description: Q17 - My teacher let me think I should use Gen-AI tools for learning.
+
+Q17 - My teacher let me think I should use Gen-AI tools for learning.	Percentage	Count
+Disagree	27%	3
+Neutral	55%	6
+Strongly agree	18%	2
+
+Title: My teacher let me think I should use Gen-AI tools for learning.
+Description: QID19
+
+My teacher let me think I should use Gen-AI tools for learning.	Average	Minimum	Maximum	Count
+Disagree	2.00	2.00	2.00	3
+Neutral	3.00	3.00	3.00	6
+Strongly agree	5.00	5.00	5.00	2
+
+Title: My peers (People who influence my behavior) let me think I should use Gen-AI tools for learning.
+Description: Q18 - My peers (People who influence my behavior) let me think I should use Gen-AI tools for learning.
+
+Q18 - My peers (People who influence my behavior) let me think I should use Gen-AI tools for learning.	Count	Number of responses
+Disagree	2	2
+Neutral	4	4
+Agree	3	3
+Strongly Agree	2	2
+
+Title: My peers (People who influence my behavior) let me think I should use Gen-AI tools for learning.
+Description: Q18 - My peers (People who influence my behavior) let me think I should use Gen-AI tools for learning.
+
+Q18 - My peers (People who influence my behavior) let me think I should use Gen-AI tools for learning.	Percentage	Count
+Disagree	18%	2
+Neutral	36%	4
+Agree	27%	3
+Strongly Agree	18%	2
+
+Title: My peers (People who influence my behavior) let me think I should use Gen-AI tools for learning.
+Description: QID20
+
+My peers (People who influence my behavior) let me think I should use Gen-A...	Average	Minimum	Maximum	Count
+Disagree	2.00	2.00	2.00	2
+Neutral	3.00	3.00	3.00	4
+Agree	4.00	4.00	4.00	3
+Strongly Agree	5.00	5.00	5.00	2
+
+Title: What ethical concerns do you have about using Generative AI tools in your studies? (Select all that apply)
+Description: Q19 - What ethical concerns do you have about using Generative AI tools in your studies? (Select all that apply) - Selected Choice
+
+Q19 - What ethical concerns do you have about using Generative AI tools in your studies? (Select all that apply) - Selected Choice	Count	Number of responses
+Potential for cheating or academic dishonesty	6	6
+Overreliance on AI, reducing actual learning	8	8
+Bias in AI-generated outputs	4	4
+Lack of transparency in how AI works	3	3
+
+Title: What ethical concerns do you have about using Generative AI tools in your studies? (Select all that apply)
+Description: Q19 - What ethical concerns do you have about using Generative AI tools in your studies? (Select all that apply) - Selected Choice
+
+Q19 - What ethical concerns do you have about using Generative AI tools in your studies? (Select all that apply) - Selected Choice	Percentage	Count
+Potential for cheating or academic dishonesty	55%	6
+Overreliance on AI, reducing actual learning	73%	8
+Bias in AI-generated outputs	36%	4
+Lack of transparency in how AI works	27%	3
+
+Title: What ethical concerns do you have about using Generative AI tools in your studies? (Select all that apply): Other (Please specify):
+Description: Q19_5_TEXT - Other (Please specify): - Text
+
+Other (Please specify):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Title: My use of Gen-AI tools in my studies is voluntary.
+Description: Q20 - My use of Gen-AI tools in my studies is voluntary.
+
+Q20 - My use of Gen-AI tools in my studies is voluntary.	Count	Number of responses
+Neutral	1	1
+Agree	6	6
+Strongly agree	4	4
+
+Title: My use of Gen-AI tools in my studies is voluntary.
+Description: Q20 - My use of Gen-AI tools in my studies is voluntary.
+
+Q20 - My use of Gen-AI tools in my studies is voluntary.	Percentage	Count
+Neutral	9%	1
+Agree	55%	6
+Strongly agree	36%	4
+
+Title: My use of Gen-AI tools in my studies is voluntary.
+Description: QID23
+
+My use of Gen-AI tools in my studies is voluntary.	Average	Minimum	Maximum	Count
+Neutral	3.00	3.00	3.00	1
+Agree	4.00	4.00	4.00	6
+Strongly agree	5.00	5.00	5.00	4
+
+Title: The quality of the output I get from Gen-AI tools is high and satisfied.
+Description: Q21 - The quality of the output I get from Gen-AI tools is high and satisfied.
+
+Q21 - The quality of the output I get from Gen-AI tools is high and satisfied.	Count	Number of responses
+Disagree	1	1
+Neutral	1	1
+Agree	9	9
+
+Title: The quality of the output I get from Gen-AI tools is high and satisfied.
+Description: Q21 - The quality of the output I get from Gen-AI tools is high and satisfied.
+
+Q21 - The quality of the output I get from Gen-AI tools is high and satisfied.	Percentage	Count
+Disagree	9%	1
+Neutral	9%	1
+Agree	82%	9
+
+Title: The quality of the output I get from Gen-AI tools is high and satisfied.
+Description: QID25
+
+The quality of the output I get from Gen-AI tools is high and satisfied.	Average	Minimum	Maximum	Count
+Disagree	2.00	2.00	2.00	1
+Neutral	3.00	3.00	3.00	1
+Agree	4.00	4.00	4.00	9
+
+Title: I find it easy to explain how I used Gen-AI tools and to help others understand the results.
+Description: Q22 - I find it easy to explain how I used Gen-AI tools and to help others understand the results.
+
+Q22 - I find it easy to explain how I used Gen-AI tools and to help others understand the results.	Count	Number of responses
+Disagree	1	1
+Neutral	1	1
+Agree	6	6
+Strongly Agree	3	3
+
+Title: I find it easy to explain how I used Gen-AI tools and to help others understand the results.
+Description: Q22 - I find it easy to explain how I used Gen-AI tools and to help others understand the results.
+
+Q22 - I find it easy to explain how I used Gen-AI tools and to help others understand the results.	Percentage	Count
+Disagree	9%	1
+Neutral	9%	1
+Agree	55%	6
+Strongly Agree	27%	3
+
+Title: I find it easy to explain how I used Gen-AI tools and to help others understand the results.
+Description: QID26
+
+I find it easy to explain how I used Gen-AI tools and to help others unders...	Average	Minimum	Maximum	Count
+Disagree	2.00	2.00	2.00	1
+Neutral	3.00	3.00	3.00	1
+Agree	4.00	4.00	4.00	6
+Strongly Agree	5.00	5.00	5.00	3
+
+Title: I can easily explain the benefits of using Gen-AI tools for learning to others.
+Description: Q23 - I can easily explain the benefits of using Gen-AI tools for learning to others.
+
+Q23 - I can easily explain the benefits of using Gen-AI tools for learning to others.	Count	Number of responses
+Agree	6	6
+Strongly agree	5	5
+
+Title: I can easily explain the benefits of using Gen-AI tools for learning to others.
+Description: Q23 - I can easily explain the benefits of using Gen-AI tools for learning to others.
+
+Q23 - I can easily explain the benefits of using Gen-AI tools for learning to others.	Percentage	Count
+Agree	55%	6
+Strongly agree	45%	5
+
+Title: I can easily explain the benefits of using Gen-AI tools for learning to others.
+Description: QID27
+
+I can easily explain the benefits of using Gen-AI tools for learning to oth...	Average	Minimum	Maximum	Count
+Agree	4.00	4.00	4.00	6
+Strongly agree	5.00	5.00	5.00	5
+
+Title: Assuming I have access to Gen-AI tools, I intend to use them for learning.
+Description: Q24 - Assuming I have access to Gen-AI tools, I intend to use them for learning.
+
+Q24 - Assuming I have access to Gen-AI tools, I intend to use them for learning.	Count	Number of responses
+Agree	6	6
+Strongly agree	5	5
+
+Title: Assuming I have access to Gen-AI tools, I intend to use them for learning.
+Description: Q24 - Assuming I have access to Gen-AI tools, I intend to use them for learning.
+
+Q24 - Assuming I have access to Gen-AI tools, I intend to use them for learning.	Percentage	Count
+Agree	55%	6
+Strongly agree	45%	5
+
+Title: Assuming I have access to Gen-AI tools, I intend to use them for learning.
+Description: QID28
+
+Assuming I have access to Gen-AI tools, I intend to use them for learning.	Average	Minimum	Maximum	Count
+Agree	4.00	4.00	4.00	6
+Strongly agree	5.00	5.00	5.00	5
+
+Title: Given that I have access to Gen-AI tools, I will continue using them for learning.
+Description: Q25 - Given that I have access to Gen-AI tools, I will continue using them for learning.
+
+Q25 - Given that I have access to Gen-AI tools, I will continue using them for learning.	Count	Number of responses
+Agree	6	6
+Strongly agree	5	5
+
+Title: Given that I have access to Gen-AI tools, I will continue using them for learning.
+Description: Q25 - Given that I have access to Gen-AI tools, I will continue using them for learning.
+
+Q25 - Given that I have access to Gen-AI tools, I will continue using them for learning.	Percentage	Count
+Agree	55%	6
+Strongly agree	45%	5
+
+Title: Given that I have access to Gen-AI tools, I will continue using them for learning.
+Description: QID29
+
+Given that I have access to Gen-AI tools, I will continue using them for le...	Average	Minimum	Maximum	Count
+Agree	4.00	4.00	4.00	6
+Strongly agree	5.00	5.00	5.00	5
+
+Title: If I use generative AI tools in my studies, I would use it for: (Select all that apply)
+Description: Q26 - If I use generative AI tools in my studies, I would use it for: (Select all that apply)
+
+Q26 - If I use generative AI tools in my studies, I would use it for: (Select all that apply)	Count	Number of responses
+Learning new concepts	9	9
+Correcting grammar mistakes	9	9
+Automatically generating assignments answers	3	3
+Understanding difficult topics	8	8
+Skipping the need to do my own research	2	2
+Getting feedback on my work	6	6
+
+Title: If I use generative AI tools in my studies, I would use it for: (Select all that apply)
+Description: Q26 - If I use generative AI tools in my studies, I would use it for: (Select all that apply)
+
+Q26 - If I use generative AI tools in my studies, I would use it for: (Select all that apply)	Percentage	Count
+Learning new concepts	82%	9
+Correcting grammar mistakes	82%	9
+Automatically generating assignments answers	27%	3
+Understanding difficult topics	73%	8
+Skipping the need to do my own research	18%	2
+Getting feedback on my work	55%	6
+
+Title: In what ways do you engage with Gen-AI tools beyond academic purposes? (open-ended)
+Description: Q27 - In what ways do you engage with Gen-AI tools beyond academic purposes? (open-ended)
+
+In what ways do you engage with Gen-AI tools beyond academic purposes? (ope...
+
+I work with Gen-AI tools.
+travel planning, use GPT-4o web search functions
+"To find answers (for a general, non-academic question) quickly without Google search "
+
+Writing emails
+Making plans, requesting for general advices in everyday life
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Looking up interesting topics outdide my major
+Healthcare purposes with ChatGPT, to understand what are the possibilities if I don't feel well and what are the possible medicine.
+
+Handling daily routines, such as fulfil forms, writing short reports
+"ask ChatGPT how to speak English natively in daily life. Interpreting Code found online to ensure it is safe for my computer "
+
+
+
+
+
+Title: Are you currently or have you ever been a teacher in a software development related program? If yes, please answer the following questions from a teacher's perspective.
+Description: Q96 - Are you currently or have you ever been a teacher in a software development related program? If yes, please answer the following questions from a teacher's perspective.
+
+Q96 - Are you currently or have you ever been a teacher in a software development related program? If yes, please answer the following questions from a teacher's perspective.	Count	Number of responses
+Yes	2	2
+No	14	14
+
+Title: Are you currently or have you ever been a teacher in a software development related program? If yes, please answer the following questions from a teacher's perspective.
+Description: Q96 - Are you currently or have you ever been a teacher in a software development related program? If yes, please answer the following questions from a teacher's perspective.
+
+Q96 - Are you currently or have you ever been a teacher in a software development related program? If yes, please answer the following questions from a teacher's perspective.	Percentage	Count
+Yes	13%	2
+No	88%	14
+
+Title: Are you currently or have you ever been a teacher in a software development related program? If yes, please answer the following questions from a teacher's perspective.
+Description: QID96
+
+Are you currently or have you ever been a teacher in a software development...	Average	Minimum	Maximum	Count
+Yes	1.00	1.00	1.00	2
+No	2.00	2.00	2.00	14
+
+Title: Using Gen-AI tools improves my ability to teach software development.
+Description: Q28 - Using Gen-AI tools improves my ability to teach software development.
+
+Q28 - Using Gen-AI tools improves my ability to teach software development.	Count	Number of responses
+Strongly agree	1	1
+
+Title: Using Gen-AI tools improves my ability to teach software development.
+Description: Q28 - Using Gen-AI tools improves my ability to teach software development.
+
+Q28 - Using Gen-AI tools improves my ability to teach software development.	Percentage	Count
+Strongly agree	100%	1
+
+Title: Using Gen-AI tools improves my ability to teach software development.
+Description: QID32
+
+Using Gen-AI tools improves my ability to teach software development.	Average	Minimum	Maximum	Count
+Strongly agree	5.00	5.00	5.00	1
+
+Title: Gen-AI tools increase my productivity as an educator.
+Description: Q29 - Gen-AI tools increase my productivity as an educator.
+
+Q29 - Gen-AI tools increase my productivity as an educator.	Count	Number of responses
+Agree	1	1
+
+Title: Gen-AI tools increase my productivity as an educator.
+Description: Q29 - Gen-AI tools increase my productivity as an educator.
+
+Q29 - Gen-AI tools increase my productivity as an educator.	Percentage	Count
+Agree	100%	1
+
+Title: Gen-AI tools increase my productivity as an educator.
+Description: QID33
+
+Gen-AI tools increase my productivity as an educator.	Average	Minimum	Maximum	Count
+Agree	4.00	4.00	4.00	1
+
+Title: I find Gen-AI tools enhance my overall effectiveness in teaching.
+Description: Q30 - I find Gen-AI tools enhance my overall effectiveness in teaching.
+
+Q30 - I find Gen-AI tools enhance my overall effectiveness in teaching.	Count	Number of responses
+Agree	1	1
+
+Title: I find Gen-AI tools enhance my overall effectiveness in teaching.
+Description: Q30 - I find Gen-AI tools enhance my overall effectiveness in teaching.
+
+Q30 - I find Gen-AI tools enhance my overall effectiveness in teaching.	Percentage	Count
+Agree	100%	1
+
+Title: I find Gen-AI tools enhance my overall effectiveness in teaching.
+Description: QID34
+
+I find Gen-AI tools enhance my overall effectiveness in teaching.	Average	Minimum	Maximum	Count
+Agree	4.00	4.00	4.00	1
+
+Title: Using Gen-AI tools is relevant to my role as an educator in software development.
+Description: Q31 - Using Gen-AI tools is relevant to my role as an educator in software development.
+
+Q31 - Using Gen-AI tools is relevant to my role as an educator in software development.	Count	Number of responses
+Strongly agree	1	1
+
+Title: Using Gen-AI tools is relevant to my role as an educator in software development.
+Description: Q31 - Using Gen-AI tools is relevant to my role as an educator in software development.
+
+Q31 - Using Gen-AI tools is relevant to my role as an educator in software development.	Percentage	Count
+Strongly agree	100%	1
+
+Title: Using Gen-AI tools is relevant to my role as an educator in software development.
+Description: QID35
+
+Using Gen-AI tools is relevant to my role as an educator in software develo...	Average	Minimum	Maximum	Count
+Strongly agree	5.00	5.00	5.00	1
+
+Page: Page 2
+
+Title: I think what I teach is relevant to what student need in the workplace.
+Description: Q32 - I think what I teach is relevant to what student need in the workplace.
+
+Q32 - I think what I teach is relevant to what student need in the workplace.	Count	Number of responses
+Strongly agree	1	1
+
+Title: I think what I teach is relevant to what student need in the workplace.
+Description: Q32 - I think what I teach is relevant to what student need in the workplace.
+
+Q32 - I think what I teach is relevant to what student need in the workplace.	Percentage	Count
+Strongly agree	100%	1
+
+Title: I think what I teach is relevant to what student need in the workplace.
+Description: QID36
+
+I think what I teach is relevant to what student need in the workplace.	Average	Minimum	Maximum	Count
+Strongly agree	5.00	5.00	5.00	1
+
+Title: Where did you learn how to use generative AI tools effectively in your teaching?
+Description: Q33 - Where did you learn how to use generative AI tools effectively in your teaching? - Selected Choice
+
+Q33 - Where did you learn how to use generative AI tools effectively in your teaching? - Selected Choice	Count	Number of responses
+University courses or workshops	1	1
+Online tutorials or courses (e.g., Coursera, YouTube)	1	1
+Peer discussions or study groups	1	1
+Self-exploration and experimentation	2	2
+Mentorship or guidance from professors/mentors	1	1
+From friends or colleagues	1	1
+Educational webinars or conferences	1	1
+Other (please specify):	1	1
+
+Title: Where did you learn how to use generative AI tools effectively in your teaching?
+Description: Q33 - Where did you learn how to use generative AI tools effectively in your teaching? - Selected Choice
+
+Q33 - Where did you learn how to use generative AI tools effectively in your teaching? - Selected Choice	Percentage	Count
+University courses or workshops	50%	1
+Online tutorials or courses (e.g., Coursera, YouTube)	50%	1
+Peer discussions or study groups	50%	1
+Self-exploration and experimentation	100%	2
+Mentorship or guidance from professors/mentors	50%	1
+From friends or colleagues	50%	1
+Educational webinars or conferences	50%	1
+Other (please specify):	50%	1
+
+Title: Where did you learn how to use generative AI tools effectively in your teaching?: Other (please specify):
+Description: Q33_8_TEXT - Other (please specify): - Text
+
+Other (please specify):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Title: I believe learning to use generative AI tools is relevant to my career in education.
+Description: Q34 - I believe learning to use generative AI tools is relevant to my career in education.
+
+Q34 - I believe learning to use generative AI tools is relevant to my career in education.	Count	Number of responses
+Strongly agree	1	1
+
+Title: I believe learning to use generative AI tools is relevant to my career in education.
+Description: Q34 - I believe learning to use generative AI tools is relevant to my career in education.
+
+Q34 - I believe learning to use generative AI tools is relevant to my career in education.	Percentage	Count
+Strongly agree	100%	1
+
+Title: I believe learning to use generative AI tools is relevant to my career in education.
+Description: QID38
+
+I believe learning to use generative AI tools is relevant to my career in e...	Average	Minimum	Maximum	Count
+Strongly agree	5.00	5.00	5.00	1
+
+Title: I think teaching students to use generative AI tools is relevant to their future careers.
+Description: Q35 - I think teaching students to use generative AI tools is relevant to their future careers.
+
+Q35 - I think teaching students to use generative AI tools is relevant to their future careers.	Count	Number of responses
+Strongly agree	1	1
+
+Title: I think teaching students to use generative AI tools is relevant to their future careers.
+Description: Q35 - I think teaching students to use generative AI tools is relevant to their future careers.
+
+Q35 - I think teaching students to use generative AI tools is relevant to their future careers.	Percentage	Count
+Strongly agree	100%	1
+
+Title: I think teaching students to use generative AI tools is relevant to their future careers.
+Description: QID39
+
+I think teaching students to use generative AI tools is relevant to their f...	Average	Minimum	Maximum	Count
+Strongly agree	5.00	5.00	5.00	1
+
+"Title: For what tasks do you primarily use generative AI tools in your teaching?
+(Select all that apply)"
+"Description: Q36 - For what tasks do you primarily use generative AI tools in your teaching?
+(Select all that apply) - Selected Choice"
+
+"Q36 - For what tasks do you primarily use generative AI tools in your teaching?
+(Select all that apply) - Selected Choice"	Count	Number of responses
+Designing course materials	1	1
+Grading or assessment tasks	1	1
+
+"Title: For what tasks do you primarily use generative AI tools in your teaching?
+(Select all that apply)"
+"Description: Q36 - For what tasks do you primarily use generative AI tools in your teaching?
+(Select all that apply) - Selected Choice"
+
+"Q36 - For what tasks do you primarily use generative AI tools in your teaching?
+(Select all that apply) - Selected Choice"	Percentage	Count
+Designing course materials	100%	1
+Grading or assessment tasks	100%	1
+
+"Title: For what tasks do you primarily use generative AI tools in your teaching?
+(Select all that apply): Other (Please specify):"
+Description: Q36_8_TEXT - Other (Please specify): - Text
+
+Other (Please specify):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Title: What challenges do you face when using AI tools in your teaching?
+Description: Q37 - What challenges do you face when using AI tools in your teaching? - Selected Choice
+
+Q37 - What challenges do you face when using AI tools in your teaching? - Selected Choice	Count	Number of responses
+The AI outputs are often too generic or not tailored to my specific teaching needs.	1	1
+I am concerned about ethical issues regarding the use of AI tools in my teaching.	1	1
+I am concerned about maintaining academic integrity when using AI tools.	1	1
+
+Title: What challenges do you face when using AI tools in your teaching?
+Description: Q37 - What challenges do you face when using AI tools in your teaching? - Selected Choice
+
+Q37 - What challenges do you face when using AI tools in your teaching? - Selected Choice	Percentage	Count
+The AI outputs are often too generic or not tailored to my specific teaching needs.	100%	1
+I am concerned about ethical issues regarding the use of AI tools in my teaching.	100%	1
+I am concerned about maintaining academic integrity when using AI tools.	100%	1
+
+This widget failed to export please try your export again
+Title: What are the key benefits of using generative AI tools in your teaching?
+Description: Q38 - What are the key benefits of using generative AI tools in your teaching? - Selected Choice
+
+Q38 - What are the key benefits of using generative AI tools in your teaching? - Selected Choice	Count	Number of responses
+Increased efficiency in preparing teaching materials	1	1
+Improved quality of content creation	1	1
+Reduced workload for administrative tasks	1	1
+
+Title: What are the key benefits of using generative AI tools in your teaching?
+Description: Q38 - What are the key benefits of using generative AI tools in your teaching? - Selected Choice
+
+Q38 - What are the key benefits of using generative AI tools in your teaching? - Selected Choice	Percentage	Count
+Increased efficiency in preparing teaching materials	100%	1
+Improved quality of content creation	100%	1
+Reduced workload for administrative tasks	100%	1
+
+Title: What are the key benefits of using generative AI tools in your teaching?: Other (Please specify):
+Description: Q38_7_TEXT - Other (Please specify): - Text
+
+Other (Please specify):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Title: My interaction with Gen-AI tools is clear and understandable.
+Description: Q39 - My interaction with Gen-AI tools is clear and understandable.
+
+Q39 - My interaction with Gen-AI tools is clear and understandable.	Count	Number of responses
+Strongly agree	1	1
+
+Title: My interaction with Gen-AI tools is clear and understandable.
+Description: Q39 - My interaction with Gen-AI tools is clear and understandable.
+
+Q39 - My interaction with Gen-AI tools is clear and understandable.	Percentage	Count
+Strongly agree	100%	1
+
+Title: My interaction with Gen-AI tools is clear and understandable.
+Description: QID43
+
+My interaction with Gen-AI tools is clear and understandable.	Average	Minimum	Maximum	Count
+Strongly agree	5.00	5.00	5.00	1
+
+Title: Using Gen-AI tools does not require much cognitive effort.
+Description: Q40 - Using Gen-AI tools does not require much cognitive effort.
+
+Q40 - Using Gen-AI tools does not require much cognitive effort.	Count	Number of responses
+Strongly agree	1	1
+
+Title: Using Gen-AI tools does not require much cognitive effort.
+Description: Q40 - Using Gen-AI tools does not require much cognitive effort.
+
+Q40 - Using Gen-AI tools does not require much cognitive effort.	Percentage	Count
+Strongly agree	100%	1
+
+Title: Using Gen-AI tools does not require much cognitive effort.
+Description: QID44
+
+Using Gen-AI tools does not require much cognitive effort.	Average	Minimum	Maximum	Count
+Strongly agree	5.00	5.00	5.00	1
+
+Title: I find it easy to integrate Gen-AI tools into my teaching practices.
+Description: Q41 - I find it easy to integrate Gen-AI tools into my teaching practices.
+
+Q41 - I find it easy to integrate Gen-AI tools into my teaching practices.	Count	Number of responses
+Strongly Agree	1	1
+
+Title: I find it easy to integrate Gen-AI tools into my teaching practices.
+Description: Q41 - I find it easy to integrate Gen-AI tools into my teaching practices.
+
+Q41 - I find it easy to integrate Gen-AI tools into my teaching practices.	Percentage	Count
+Strongly Agree	100%	1
+
+Title: I find it easy to integrate Gen-AI tools into my teaching practices.
+Description: QID45
+
+I find it easy to integrate Gen-AI tools into my teaching practices.	Average	Minimum	Maximum	Count
+Strongly Agree	5.00	5.00	5.00	1
+
+Title: My directors, colleagues and students let me think I should use Gen-AI tools for teaching.
+Description: Q42 - My directors, colleagues and students let me think I should use Gen-AI tools for teaching.
+
+Q42 - My directors, colleagues and students let me think I should use Gen-AI tools for teaching.	Count	Number of responses
+Neutral	1	1
+
+Title: My directors, colleagues and students let me think I should use Gen-AI tools for teaching.
+Description: Q42 - My directors, colleagues and students let me think I should use Gen-AI tools for teaching.
+
+Q42 - My directors, colleagues and students let me think I should use Gen-AI tools for teaching.	Percentage	Count
+Neutral	100%	1
+
+Title: My directors, colleagues and students let me think I should use Gen-AI tools for teaching.
+Description: QID46
+
+My directors, colleagues and students let me think I should use Gen-AI tool...	Average	Minimum	Maximum	Count
+Neutral	3.00	3.00	3.00	1
+
+Title: What ethical concerns do you have about using generative AI tools in your teaching?
+Description: Q43 - What ethical concerns do you have about using generative AI tools in your teaching? - Selected Choice
+
+Q43 - What ethical concerns do you have about using generative AI tools in your teaching? - Selected Choice	Count	Number of responses
+Difficulty in ensuring academic integrity when using AI-generated materials	1	1
+
+Title: What ethical concerns do you have about using generative AI tools in your teaching?
+Description: Q43 - What ethical concerns do you have about using generative AI tools in your teaching? - Selected Choice
+
+Q43 - What ethical concerns do you have about using generative AI tools in your teaching? - Selected Choice	Percentage	Count
+Difficulty in ensuring academic integrity when using AI-generated materials	100%	1
+
+This widget failed to export please try your export again
+Title: My use of Gen-AI tools in teaching is voluntary.
+Description: Q44 - My use of Gen-AI tools in teaching is voluntary.
+
+Q44 - My use of Gen-AI tools in teaching is voluntary.	Count	Number of responses
+Strongly Agree	1	1
+
+Title: My use of Gen-AI tools in teaching is voluntary.
+Description: Q44 - My use of Gen-AI tools in teaching is voluntary.
+
+Q44 - My use of Gen-AI tools in teaching is voluntary.	Percentage	Count
+Strongly Agree	100%	1
+
+Title: My use of Gen-AI tools in teaching is voluntary.
+Description: QID48
+
+My use of Gen-AI tools in teaching is voluntary.	Average	Minimum	Maximum	Count
+Strongly Agree	5.00	5.00	5.00	1
+
+Title: My institution does not require me to use Gen-AI tools in teaching.
+Description: Q45 - My institution does not require me to use Gen-AI tools in teaching.
+
+Q45 - My institution does not require me to use Gen-AI tools in teaching.	Count	Number of responses
+Neutral	1	1
+
+Title: My institution does not require me to use Gen-AI tools in teaching.
+Description: Q45 - My institution does not require me to use Gen-AI tools in teaching.
+
+Q45 - My institution does not require me to use Gen-AI tools in teaching.	Percentage	Count
+Neutral	100%	1
+
+Title: My institution does not require me to use Gen-AI tools in teaching.
+Description: QID49
+
+My institution does not require me to use Gen-AI tools in teaching.	Average	Minimum	Maximum	Count
+Neutral	3.00	3.00	3.00	1
+
+Title: The quality of teaching materials I produce with Gen-AI tools is high.
+Description: Q46 - The quality of teaching materials I produce with Gen-AI tools is high.
+
+Q46 - The quality of teaching materials I produce with Gen-AI tools is high.	Count	Number of responses
+Strongly agree	1	1
+
+Title: The quality of teaching materials I produce with Gen-AI tools is high.
+Description: Q46 - The quality of teaching materials I produce with Gen-AI tools is high.
+
+Q46 - The quality of teaching materials I produce with Gen-AI tools is high.	Percentage	Count
+Strongly agree	100%	1
+
+Title: The quality of teaching materials I produce with Gen-AI tools is high.
+Description: QID50
+
+The quality of teaching materials I produce with Gen-AI tools is high.	Average	Minimum	Maximum	Count
+Strongly agree	5.00	5.00	5.00	1
+
+Title: I have no difficulty explaining the results of using Gen-AI tools in teaching to others.
+Description: Q47 - I have no difficulty explaining the results of using Gen-AI tools in teaching to others.
+
+Q47 - I have no difficulty explaining the results of using Gen-AI tools in teaching to others.	Count	Number of responses
+Strongly agree	1	1
+
+This widget failed to export please try your export again
+Title: I have no difficulty explaining the results of using Gen-AI tools in teaching to others.
+Description: QID51
+
+I have no difficulty explaining the results of using Gen-AI tools in teachi...	Average	Minimum	Maximum	Count
+Strongly agree	5.00	5.00	5.00	1
+
+Title: I can easily communicate the benefits of using Gen-AI tools for teaching to others.
+Description: Q48 - I can easily communicate the benefits of using Gen-AI tools for teaching to others.
+
+Q48 - I can easily communicate the benefits of using Gen-AI tools for teaching to others.	Count	Number of responses
+Strongly agree	1	1
+
+Title: I can easily communicate the benefits of using Gen-AI tools for teaching to others.
+Description: Q48 - I can easily communicate the benefits of using Gen-AI tools for teaching to others.
+
+Q48 - I can easily communicate the benefits of using Gen-AI tools for teaching to others.	Percentage	Count
+Strongly agree	100%	1
+
+Title: I can easily communicate the benefits of using Gen-AI tools for teaching to others.
+Description: QID52
+
+I can easily communicate the benefits of using Gen-AI tools for teaching to...	Average	Minimum	Maximum	Count
+Strongly agree	5.00	5.00	5.00	1
+
+Title: Assuming I have access to Gen-AI tools, I intend to use them in teaching.
+Description: Q49 - Assuming I have access to Gen-AI tools, I intend to use them in teaching.
+
+Q49 - Assuming I have access to Gen-AI tools, I intend to use them in teaching.	Count	Number of responses
+Strongly agree	1	1
+
+This widget failed to export please try your export again
+Title: Assuming I have access to Gen-AI tools, I intend to use them in teaching.
+Description: QID53
+
+Assuming I have access to Gen-AI tools, I intend to use them in teaching.	Average	Minimum	Maximum	Count
+Strongly agree	5.00	5.00	5.00	1
+
+Title: Given that I have access to Gen-AI tools, I predict I will continue using them in teaching.
+Description: Q50 - Given that I have access to Gen-AI tools, I predict I will continue using them in teaching.
+
+Q50 - Given that I have access to Gen-AI tools, I predict I will continue using them in teaching.	Count	Number of responses
+Strongly agree	1	1
+
+Title: Given that I have access to Gen-AI tools, I predict I will continue using them in teaching.
+Description: Q50 - Given that I have access to Gen-AI tools, I predict I will continue using them in teaching.
+
+Q50 - Given that I have access to Gen-AI tools, I predict I will continue using them in teaching.	Percentage	Count
+Strongly agree	100%	1
+
+Title: Given that I have access to Gen-AI tools, I predict I will continue using them in teaching.
+Description: QID54
+
+Given that I have access to Gen-AI tools, I predict I will continue using t...	Average	Minimum	Maximum	Count
+Strongly agree	5.00	5.00	5.00	1
+
+Title: If I use Gen-AI tools in my teaching, I would use it for: (Select all that apply)
+Description: Q51 - If I use Gen-AI tools in my teaching, I would use it for: (Select all that apply)
+
+Q51 - If I use Gen-AI tools in my teaching, I would use it for: (Select all that apply)	Count	Number of responses
+Automating repetitive tasks like grading	1	1
+Enhancing student engagement with interactive content	1	1
+Supporting students with additional resources	1	1
+
+This widget failed to export please try your export again
+Title: When using Gen-AI tools in my teaching, I most value: (Select all that apply)
+Description: Q52 - When using Gen-AI tools in my teaching, I most value: (Select all that apply)
+
+Q52 - When using Gen-AI tools in my teaching, I most value: (Select all that apply)	Count	Number of responses
+Automating grading and feedback processes	1	1
+
+This widget failed to export please try your export again
+Title: Are you currently or have you ever been a software developer? If yes, please answer the following questions from a software developer's perspective.
+Description: Q105 - Are you currently or have you ever been a software developer? If yes, please answer the following questions from a software developer's perspective.
+
+Q105 - Are you currently or have you ever been a software developer? If yes, please answer the following questions from a software developer's perspective.	Count	Number of responses
+Yes	7	7
+No	9	9
+
+This widget failed to export please try your export again
+Title: Are you currently or have you ever been a software developer? If yes, please answer the following questions from a software developer's perspective.
+Description: QID105
+
+Are you currently or have you ever been a software developer? If yes, pleas...	Average	Minimum	Maximum	Count
+Yes	1.00	1.00	1.00	7
+No	2.00	2.00	2.00	9
+
+Title: Using Gen-AI tools improves my job performance as a software developer.
+Description: Q53 - Using Gen-AI tools improves my job performance as a software developer.
+
+Q53 - Using Gen-AI tools improves my job performance as a software developer.	Count	Number of responses
+Agree	3	3
+Strongly agree	2	2
+
+This widget failed to export please try your export again
+Title: Using Gen-AI tools improves my job performance as a software developer.
+Description: QID57
+
+Using Gen-AI tools improves my job performance as a software developer.	Average	Minimum	Maximum	Count
+Agree	4.00	4.00	4.00	3
+Strongly agree	5.00	5.00	5.00	2
+
+This widget failed to export please try your export again
+This widget failed to export please try your export again
+Title: Gen-AI tools increase my productivity in the workplace.
+Description: QID58
+
+Gen-AI tools increase my productivity in the workplace.	Average	Minimum	Maximum	Count
+Agree	4.00	4.00	4.00	1
+Strongly agree	5.00	5.00	5.00	4
+
+This widget failed to export please try your export again
+This widget failed to export please try your export again
+Title: I find Gen-AI tools enhance my overall effectiveness at work.
+Description: QID59
+
+I find Gen-AI tools enhance my overall effectiveness at work.	Average	Minimum	Maximum	Count
+Agree	4.00	4.00	4.00	2
+Strongly Agree	5.00	5.00	5.00	3
+
+This widget failed to export please try your export again
+This widget failed to export please try your export again
+Title: Using Gen-AI tools is relevant to my role as a software developer.
+Description: QID60
+
+Using Gen-AI tools is relevant to my role as a software developer.	Average	Minimum	Maximum	Count
+Agree	4.00	4.00	4.00	1
+Strongly agree	5.00	5.00	5.00	4
+
+This widget failed to export please try your export again
+This widget failed to export please try your export again
+This widget failed to export please try your export again
+Title: For what tasks do you primarily use AI tools in your work? (Select all that apply)
+Description: Q58 - For what tasks do you primarily use AI tools in your work? (Select all that apply) - Selected Choice
+
+Q58 - For what tasks do you primarily use AI tools in your work? (Select all that apply) - Selected Choice	Count	Number of responses
+Code generation	5	5
+Reviewing code	4	4
+Understanding software requirements	2	2
+Writing or editing documentation	2	2
+Refactoring code	2	2
+Explaining code to others	1	1
+Debugging or finding bugs	4	4
+Creating or generating test cases	4	4
+Generating API documentation or user guides	3	3
+
+Page: Page 3
+
+"Title: What ethical concerns do you have about using generative AI tools in your work?
+(Select all that apply)"
+"Description: Q65 - What ethical concerns do you have about using generative AI tools in your work?
+(Select all that apply) - Selected Choice"
+
+"Q65 - What ethical concerns do you have about using generative AI tools in your work?
+(Select all that apply) - Selected Choice"	Count	Number of responses
+Potential for AI-generated code to include biased or discriminatory logic	2	2
+Overreliance on AI, reducing my own problem-solving and coding skills	3	3
+Use of AI tools leading to intellectual property or plagiarism issues	3	3
+AI tools providing solutions that are not fully reliable or secure	4	4
+Ethical concerns around AI-generated code being used in malicious ways	1	1
+
+"Title: What ethical concerns do you have about using generative AI tools in your work?
+(Select all that apply)"
+"Description: Q65 - What ethical concerns do you have about using generative AI tools in your work?
+(Select all that apply) - Selected Choice"
+
+"Q65 - What ethical concerns do you have about using generative AI tools in your work?
+(Select all that apply) - Selected Choice"	Percentage	Count
+Potential for AI-generated code to include biased or discriminatory logic	40%	2
+Overreliance on AI, reducing my own problem-solving and coding skills	60%	3
+Use of AI tools leading to intellectual property or plagiarism issues	60%	3
+AI tools providing solutions that are not fully reliable or secure	80%	4
+Ethical concerns around AI-generated code being used in malicious ways	20%	1
+
+"Title: What ethical concerns do you have about using generative AI tools in your work?
+(Select all that apply): Other (Please specify):"
+Description: Q65_7_TEXT - Other (Please specify): - Text
+
+Other (Please specify):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Title: My use of Gen-AI tools in my job is voluntary.
+Description: Q66 - My use of Gen-AI tools in my job is voluntary.
+
+Q66 - My use of Gen-AI tools in my job is voluntary.	Count	Number of responses
+Agree	3	3
+Strongly Agree	2	2
+
+Title: My use of Gen-AI tools in my job is voluntary.
+Description: Q66 - My use of Gen-AI tools in my job is voluntary.
+
+Q66 - My use of Gen-AI tools in my job is voluntary.	Percentage	Count
+Agree	60%	3
+Strongly Agree	40%	2
+
+Title: My use of Gen-AI tools in my job is voluntary.
+Description: QID72
+
+My use of Gen-AI tools in my job is voluntary.	Average	Minimum	Maximum	Count
+Agree	4.00	4.00	4.00	3
+Strongly Agree	5.00	5.00	5.00	2
+
+Title: My supervisor/manager does not require me to use Gen-AI tools.
+Description: Q67 - My supervisor/manager does not require me to use Gen-AI tools.
+
+Q67 - My supervisor/manager does not require me to use Gen-AI tools.	Count	Number of responses
+Disagree	2	2
+Neutral	1	1
+Agree	2	2
+
+Title: My supervisor/manager does not require me to use Gen-AI tools.
+Description: Q67 - My supervisor/manager does not require me to use Gen-AI tools.
+
+Q67 - My supervisor/manager does not require me to use Gen-AI tools.	Percentage	Count
+Disagree	40%	2
+Neutral	20%	1
+Agree	40%	2
+
+Title: My supervisor/manager does not require me to use Gen-AI tools.
+Description: QID74
+
+My supervisor/manager does not require me to use Gen-AI tools.	Average	Minimum	Maximum	Count
+Disagree	2.00	2.00	2.00	2
+Neutral	3.00	3.00	3.00	1
+Agree	4.00	4.00	4.00	2
+
+Title: The quality of work I produce with Gen-AI tools is high.
+Description: Q68 - The quality of work I produce with Gen-AI tools is high.
+
+Q68 - The quality of work I produce with Gen-AI tools is high.	Count	Number of responses
+Neutral	2	2
+Agree	2	2
+Strongly Agree	1	1
+
+Title: The quality of work I produce with Gen-AI tools is high.
+Description: Q68 - The quality of work I produce with Gen-AI tools is high.
+
+Q68 - The quality of work I produce with Gen-AI tools is high.	Percentage	Count
+Neutral	40%	2
+Agree	40%	2
+Strongly Agree	20%	1
+
+Title: The quality of work I produce with Gen-AI tools is high.
+Description: QID75
+
+The quality of work I produce with Gen-AI tools is high.	Average	Minimum	Maximum	Count
+Neutral	3.00	3.00	3.00	2
+Agree	4.00	4.00	4.00	2
+Strongly Agree	5.00	5.00	5.00	1
+
+Title: I have no difficulty explaining the results of using Gen-AI tools to others.
+Description: Q69 - I have no difficulty explaining the results of using Gen-AI tools to others.
+
+Q69 - I have no difficulty explaining the results of using Gen-AI tools to others.	Count	Number of responses
+Disagree	1	1
+Agree	2	2
+Strongly Agree	2	2
+
+Title: I have no difficulty explaining the results of using Gen-AI tools to others.
+Description: Q69 - I have no difficulty explaining the results of using Gen-AI tools to others.
+
+Q69 - I have no difficulty explaining the results of using Gen-AI tools to others.	Percentage	Count
+Disagree	20%	1
+Agree	40%	2
+Strongly Agree	40%	2
+
+Title: I have no difficulty explaining the results of using Gen-AI tools to others.
+Description: QID76
+
+I have no difficulty explaining the results of using Gen-AI tools to others...	Average	Minimum	Maximum	Count
+Disagree	2.00	2.00	2.00	1
+Agree	4.00	4.00	4.00	2
+Strongly Agree	5.00	5.00	5.00	2
+
+Title: I can easily communicate the benefits of using Gen-AI tools for work to others.
+Description: Q70 - I can easily communicate the benefits of using Gen-AI tools for work to others.
+
+Q70 - I can easily communicate the benefits of using Gen-AI tools for work to others.	Count	Number of responses
+Agree	2	2
+Strongly Agree	3	3
+
+Title: I can easily communicate the benefits of using Gen-AI tools for work to others.
+Description: Q70 - I can easily communicate the benefits of using Gen-AI tools for work to others.
+
+Q70 - I can easily communicate the benefits of using Gen-AI tools for work to others.	Percentage	Count
+Agree	40%	2
+Strongly Agree	60%	3
+
+Title: I can easily communicate the benefits of using Gen-AI tools for work to others.
+Description: QID77
+
+I can easily communicate the benefits of using Gen-AI tools for work to oth...	Average	Minimum	Maximum	Count
+Agree	4.00	4.00	4.00	2
+Strongly Agree	5.00	5.00	5.00	3
+
+Title: Assuming I have access to Gen-AI tools, I intend to use them for work.
+Description: Q71 - Assuming I have access to Gen-AI tools, I intend to use them for work.
+
+Q71 - Assuming I have access to Gen-AI tools, I intend to use them for work.	Count	Number of responses
+Agree	2	2
+Strongly Agree	3	3
+
+Title: Assuming I have access to Gen-AI tools, I intend to use them for work.
+Description: Q71 - Assuming I have access to Gen-AI tools, I intend to use them for work.
+
+Q71 - Assuming I have access to Gen-AI tools, I intend to use them for work.	Percentage	Count
+Agree	40%	2
+Strongly Agree	60%	3
+
+Title: Assuming I have access to Gen-AI tools, I intend to use them for work.
+Description: QID78
+
+Assuming I have access to Gen-AI tools, I intend to use them for work.	Average	Minimum	Maximum	Count
+Agree	4.00	4.00	4.00	2
+Strongly Agree	5.00	5.00	5.00	3
+
+Title: Given that I have access to Gen-AI tools, I will continue using them.
+Description: Q72 - Given that I have access to Gen-AI tools, I will continue using them.
+
+Q72 - Given that I have access to Gen-AI tools, I will continue using them.	Count	Number of responses
+Agree	3	3
+Strongly Agree	2	2
+
+Title: Given that I have access to Gen-AI tools, I will continue using them.
+Description: Q72 - Given that I have access to Gen-AI tools, I will continue using them.
+
+Q72 - Given that I have access to Gen-AI tools, I will continue using them.	Percentage	Count
+Agree	60%	3
+Strongly Agree	40%	2
+
+Title: Given that I have access to Gen-AI tools, I will continue using them.
+Description: QID79
+
+Given that I have access to Gen-AI tools, I will continue using them.	Average	Minimum	Maximum	Count
+Agree	4.00	4.00	4.00	3
+Strongly Agree	5.00	5.00	5.00	2
+
+Title: If I use Gen-AI tools in my software development work, I would use it for: (Select all that apply)
+Description: Q73 - If I use Gen-AI tools in my software development work, I would use it for: (Select all that apply)
+
+Q73 - If I use Gen-AI tools in my software development work, I would use it for: (Select all that apply)	Count	Number of responses
+Improving the quality of my code	5	5
+Automating repetitive coding tasks	4	4
+Debugging or finding bugs in my code	3	3
+Writing documentation or user manuals	3	3
+
+Title: If I use Gen-AI tools in my software development work, I would use it for: (Select all that apply)
+Description: Q73 - If I use Gen-AI tools in my software development work, I would use it for: (Select all that apply)
+
+Q73 - If I use Gen-AI tools in my software development work, I would use it for: (Select all that apply)	Percentage	Count
+Improving the quality of my code	100%	5
+Automating repetitive coding tasks	80%	4
+Debugging or finding bugs in my code	60%	3
+Writing documentation or user manuals	60%	3
+
+Title: When using Gen-AI tools in my development process, I most appreciate: (Select all that apply)
+Description: Q74 - When using Gen-AI tools in my development process, I most appreciate: (Select all that apply)
+
+Q74 - When using Gen-AI tools in my development process, I most appreciate: (Select all that apply)	Count	Number of responses
+Increasing efficiency in writing code	4	4
+Reducing time spent on testing and debugging	5	5
+Improving code readability and structure	4	4
+Simplifying complex tasks like refactoring large codebases	3	3
+
+Title: When using Gen-AI tools in my development process, I most appreciate: (Select all that apply)
+Description: Q74 - When using Gen-AI tools in my development process, I most appreciate: (Select all that apply)
+
+Q74 - When using Gen-AI tools in my development process, I most appreciate: (Select all that apply)	Percentage	Count
+Increasing efficiency in writing code	80%	4
+Reducing time spent on testing and debugging	100%	5
+Improving code readability and structure	80%	4
+Simplifying complex tasks like refactoring large codebases	60%	3
