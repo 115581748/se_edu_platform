@@ -2,14 +2,20 @@ import subprocess
 import time
 from pathlib import Path
 import requests
+import sys
+import shutil
 
 ROOT = Path(__file__).resolve().parent
-BACKEND_CMD = ["uvicorn", "backend.app:app", "--port", "8000"]
+BACKEND_CMD = [sys.executable, "-m", "uvicorn", "app:app", "--port", "8000"]
 FRONTEND_CMD = ["npm", "run", "dev", "--", "--port", "5173"]
 
 
 def start_process(cmd, cwd=None):
     """Start a subprocess and return the handle."""
+    exe = cmd[0]
+    # Ensure command exists to avoid FileNotFoundError
+    if shutil.which(exe) is None:
+        raise RuntimeError(f"Command '{exe}' not found. Is it installed and on your PATH?")
     return subprocess.Popen(cmd, cwd=cwd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 
