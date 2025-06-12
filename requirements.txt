@@ -4,3 +4,10 @@ neo4j
 python-dotenv
 openai
 tiktoken
+requests
+beautifulsoup4
+wikipedia-api
+PyGithub
+stackapi
+spacy
+

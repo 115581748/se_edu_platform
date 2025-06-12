@@ -89,7 +89,6 @@ def github_stats(name):
 
 
 
-+
 def first_google_result(query):
     try:
         html=requests.get(f"https://duckduckgo.com/html/?q={query}",
