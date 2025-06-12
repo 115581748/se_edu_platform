@@ -3,6 +3,7 @@ import time
 from pathlib import Path
 import requests
 
+ROOT = Path(__file__).resolve().parent
 BACKEND_CMD = ["uvicorn", "backend.app:app", "--port", "8000"]
 FRONTEND_CMD = ["npm", "run", "dev", "--", "--port", "5173"]
 
@@ -26,11 +27,13 @@ def check_url(url, retries=5, delay=1):
 
 
 def main():
-    backend_proc = start_process(BACKEND_CMD)
+    backend_dir = ROOT / "backend"
+    backend_proc = start_process(BACKEND_CMD, cwd=backend_dir)
     time.sleep(5)
     backend_ok = check_url("http://localhost:8000/docs")
 
-    frontend_proc = start_process(FRONTEND_CMD, cwd="frontend")
+    frontend_dir = ROOT / "frontend"
+    frontend_proc = start_process(FRONTEND_CMD, cwd=frontend_dir)
     time.sleep(5)
     frontend_ok = check_url("http://localhost:5173")
 
