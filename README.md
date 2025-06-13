@@ -66,3 +66,7 @@ stackflow2.py   # Stack Overflow 数据导入
 
 根据 `Advide_from_AI_Total.md` 的规划，后续可以完善推荐算法、引入区块链日志、使用 Docker Compose 部署整套系统等，以持续提升教学体验与可维护性。
 
+
+## 文档
+
+系统架构设计与 ER 图见 [docs/architecture.md](docs/architecture.md)。
