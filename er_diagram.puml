@@ -1,0 +1,28 @@
+@startuml
+!define table(x) class x << (T,#FFAAAA) >>
+skinparam linetype ortho
+
+table(User) {
+  + id : UUID [PK]
+  --
+  name : String
+}
+
+table(Concept) {
+  + name : String [PK]
+  --
+  description : String
+  status : String
+}
+
+table(Resource) {
+  + url : String [PK]
+  --
+  type : String
+  concept_name : String [FK]
+}
+
+User "1" -- "N" Concept : learned >
+Concept "1" -- "N" Resource : has_resource >
+Concept "N" -- "N" Concept : related_to >
+@enduml

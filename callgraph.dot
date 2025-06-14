@@ -1,0 +1,11 @@
+digraph {
+	tooltip=" "
+	graph [fontname=Arial, nodesep=0.125, ranksep=0.25];
+	node [fontcolor=white, fontname=Arial, height=0, shape=box, style=filled, width=0];
+	edge [fontname=Arial];
+	0 [color="#0d327e", fontcolor="#ffffff", fontsize="10.00", label="run_prof:8:main\n8.36%\n(8.36%)\n1×", tooltip="E:\\last-1\\please_last_project\\run_prof.py"];
+	1 [color="#0d3d80", fontcolor="#ffffff", fontsize="10.00", label="<string>:1:<module>\n10.46%\n(2.09%)\n1×", tooltip="<string>"];
+	1 -> 0 [arrowsize="0.35", color="#0d327e", fontcolor="#0d327e", fontsize="10.00", label="8.36%\n1×", labeldistance="0.50", penwidth="0.50"];
+	2 [color="#ff0300", fontcolor="#ffffff", fontsize="10.00", label="~:0:<built-in method builtins.exec>\n99.75%\n(89.30%)\n1×", tooltip="~"];
+	2 -> 1 [arrowsize="0.35", color="#0d3d80", fontcolor="#0d3d80", fontsize="10.00", label="10.46%\n1×", labeldistance="0.50", penwidth="0.50"];
+}

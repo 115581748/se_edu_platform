@@ -1,0 +1,34 @@
+@startuml
+' 让 PlantUML 按照自上而下的顺序布局
+top to bottom direction
+skinparam linetype ortho
+
+
+database "Neo4j\n知识图谱"     as Neo4j
+cloud    "DeepSeek R1\n大语言模型" as AI
+rectangle "后端\n(FastAPI)"      as Backend
+
+rectangle "前端\n(React + Vite)" as Frontend {
+  [NeoGraph 可视化]   as NG
+  [ChatPanel AI 问答] as CP
+  [LearnPanel 学习记录] as LP
+}
+
+actor 学生 as Student
+
+' —— 接口调用关系 —— 
+Student  --> NG       : 浏览/点击节点  
+Student  --> CP       : 输入问题  
+Student  --> LP       : 标记已学  
+
+NG       --> Backend  : GET  /api/graph-data  
+CP       --> Backend  : POST /api/ai/generate  
+LP       --> Backend  : POST /api/learning/mark  
+
+Backend  --> Neo4j    : Cypher 查询/更新  
+Backend  --> AI       : prompt + 已学概念  
+AI       --> Backend  : 返回生成内容  
+
+Backend  --> Frontend : JSON 响应
+
+@enduml
