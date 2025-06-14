@@ -1,0 +1,39 @@
+flowchart LR
+  %% 子图：学生
+  subgraph 学生
+    U1([用户输入<br/>“什么是深度学习？”])
+  end
+
+  %% 子图：前端
+  subgraph 前端
+    F1([ChatPanel 捕获输入])
+    F2([POST /api/chat])
+    F3([展示 AI 回答])
+  end
+
+  %% 子图：后端
+  subgraph 后端
+    B1([FastAPI /api/chat])
+    B2([查询 Neo4j 知识图谱])
+    B3([拼接 Prompt])
+    B4([调用 DeepSeek-V1 ChatCompletion])
+    B5([封装 JSON 响应])
+  end
+
+  %% 子图：LLM 服务
+  subgraph LLM服务
+    L1([DeepSeek ChatCompletion API])
+  end
+
+  %% 流程连线
+  U1 --> F1
+  F1 --> F2
+  F2 --> B1
+  B1 --> B2
+  B2 --> B3
+  B3 --> B4
+  B4 --> L1
+  L1 --> B4
+  B4 --> B5
+  B5 --> F3
+  F3 --> U1

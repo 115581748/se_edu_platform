@@ -1,0 +1,37 @@
+flowchart LR
+  %% 指定全局从左到右布局
+  %% 定义泳道
+  subgraph 学生
+    direction LR
+    A1(输入问题)
+  end
+
+  subgraph 前端
+    direction LR
+    B1[发送 POST /api/ai/generate]
+    B2[接收回答并渲染]
+  end
+
+  subgraph 后端
+    direction LR
+    C1[FastAPI ai_generate]
+    C2[查询 Neo4j 中 taught 概念]
+    C3[拼接 full_prompt]
+    C4[调用 call_deepseek_chat]
+  end
+
+  subgraph LLM服务
+    direction LR
+    D1[DeepSeek Chat API]
+  end
+
+  %% 连线
+  A1 --> B1
+  B1 --> C1
+  C1 --> C2
+  C2 --> C3
+  C3 --> C4
+  C4 --> D1
+  D1 --> C4
+  C4 --> B2
+  B2 --> A1

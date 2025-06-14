@@ -1,0 +1,11 @@
+flowchart TD
+  A[学生在 ChatPanel 输入问题] --> B[前端发送 POST /api/ai/generate]
+  B --> C[FastAPI 执行 ai_generate]
+  C --> D[从 Neo4j 拉取 taught 概念]
+  D --> E[构建已学概念列表]
+  E --> F[拼接 full_prompt]
+  F --> G[调用 call_deepseek_chat]
+  G --> H[向 DeepSeek API 请求]
+  H --> I[DeepSeek 返回生成内容]
+  I --> J[FastAPI 返回 GenerateResponse]
+  J --> K[ChatPanel 渲染并显示回答]
