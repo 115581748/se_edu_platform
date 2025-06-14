@@ -1,0 +1,52 @@
+@startuml
+' 使用正交布局、矩形包风格
+skinparam linetype ortho
+skinparam packageStyle rectangle
+
+' 前端包
+package "Frontend\n(React + Vite)" as FE {
+  class App_ts <<component>>
+  class ChatPanel_ts <<component>>
+  class NeoGraph_ts <<component>>
+  class LearnPanel_ts <<component>>
+}
+
+' 后端包
+package "Backend\n(FastAPI)" as BE {
+  package Controllers {
+    class GraphController
+    class AIController
+    class LearningController
+  }
+  package Services {
+    class GraphService
+    class AIService
+    class LearningService
+  }
+  package Models {
+    class Concept
+    class Topic
+    class User
+  }
+}
+
+' 数据包，用 stereotype 标明它是数据库
+package "Data\n(Neo4j)" as DB {
+  class GraphDB <<database>>
+}
+
+' 外部服务包，用 stereotype 标明
+package "External\n(DeepSeek R1)" as AI {
+  class LLM_API <<external service>>
+}
+
+' 包之间的依赖关系
+FE --> BE : REST API calls
+BE --> DB : Cypher queries
+BE --> AI : prompt/request
+AI --> BE : responses
+
+' 后端内部到模型层的关系（示意）
+BE --> Concept : operates on
+
+@enduml
