@@ -1,4 +1,3 @@
-# please_last_project
 # AI-Powered Software Engineering Education Platform
 
 A full-stack application designed to assist learners in navigating software engineering concepts through an interactive knowledge graph and AI-driven Q&A. The project separates frontend and backend, leveraging modern web technologies and machine learning to provide a personalized study experience.
